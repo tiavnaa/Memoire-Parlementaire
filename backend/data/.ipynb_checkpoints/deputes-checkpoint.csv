@@ -1,0 +1,178 @@
+numero,nom,prenom,genre,district,region,parti_politique,groupe_parlementaire,status
+1,AFAKANDRO,Christian,Masculin,Mahajanga,BOENY,Firaisankina,FIRAISANKINA,ACTIVE
+2,MENA,Honaisiford Edwin,Masculin,Mitsinjo,BOENY,,Non_Affilié,ACTIVE
+3,ANDRIAMAMERIARIVO,Déo Romelis,Masculin,Bekily,ANDROY,IRMAR,GPIF1,ACTIVE
+4,ANDRIAMAMONJY,Olivier,Masculin,Amboasary,ANOSY,Indépendant,GPIF1,ACTIVE
+5,RAMANANARIVO,Samoela,Masculin,Antananarivo IV,ANALAMANGA,Firaisankina,FIRAISANKINA,ACTIVE
+6,ANDRIAMANANORO,RAZAFINARIVO Augustin,Masculin,Antananarivo I,ANALAMANGA,IRMAR,IRMAR,ACTIVE
+7,ANDRIAMANJATO,Liantsoa Bina,Masculin,Andramasina,ANALAMANGA,Indépendant,GPIF3,ACTIVE
+8,ANDRIAMIHAJA,Fanomezantsoa Yves Georges,Masculin,Ambositra,AMORON'I MANIA,Indépendant,Non_Affilié,ACTIVE
+9,ANDRIAMIHARIVOLAMENA,Liva Zavamanitra,Masculin,Fandriana,AMORON'I MANIA,Indépendant,Non_Affilié,ACTIVE
+10,ANDRIAMOSA,Benjamina Avotraina Rajaobelina Mary Thomasson,Masculin,Avaradrano,ANALAMANGA,Firaisankina,FIRAISANKINA,ACTIVE
+11,ANDRIANAMBENANA,Velomihoatra Tsimanositra Painchard,Masculin,Farafangana,ATSIMO ATSINANANA,IRMAR,Non_Affilié,ACTIVE
+12,ANDRIANANARIVONOMENJANAHARY,Andrianasolo Joseph Oslo Sandland,Masculin,Antsalova,MELAKY,Indépendant,GPIF1,ACTIVE
+13,ANDRIANARY,Thierry Didier,Masculin,Toamasina II,ATSINANANA,IRMAR,GPIF2,ACTIVE
+14,ANDRIANASOLO,Andrianiaina Jean Patrick,Masculin,Ambatondrazaka,ALAOTRA MANGORO,IRMAR,GPIF3,ACTIVE
+15,ANDRIANASOLO,Nadine,Feminin,Manakara,FITOVINANY,IRMAR,IRMAR,ACTIVE
+16,ANDRIANIRINA,Narcis,Masculin,Mahabo,MENABE,IRMAR,GPIF1,ACTIVE
+17,ANDRIANJANAHARY,Fanomezantsoa,Masculin,Manandriana,AMORON'I MANIA,Indépendant,GPIF3,ACTIVE
+18,AROSY,Namiandrazana François,Masculin,Nosy Be,DIANA,Indépendant,GPIF1,ACTIVE
+19,ASSIMO,Bruno,Masculin,Ambilobe,DIANA,IRMAR,IRMAR,ACTIVE
+20,BARINIAINA,Fidy,Masculin,Manjakandriana,ANALAMANGA,FIVOI,IRMAR,ACTIVE
+21,Befeno Todimanana,Aymar Hyacinthe,Masculin,Antsohihy,SOFIA,IRMAR,Non_Affilié,ACTIVE
+22,BEFOTOTO,Angelin,Masculin,Andapa,SAVA,IRMAR,Non_Affilié,ACTIVE
+23,BOTOTEFY,Herimanantsoa Odilon,Masculin,Vondrozo,ATSIMO ATSINANANA,IRMAR,GPIF1,ACTIVE
+24,DARKHAOUI,Siritis,Masculin,Ambanja,DIANA,IRMAR,IRMAR,ACTIVE
+25,DINAH,Romual,Masculin,Maroantsetra,ANALANJIROFO,IRMAR,GPIF3,ACTIVE
+26,FERNAND,Eric Sandhy,Masculin,Antalaha,SAVA,Indépendant,Non_Affilié,ACTIVE
+27,FIAROVANA,Lovanirina Célestin,Masculin,Betafo,VAKINANKARATRA,IRMAR,GPIF2,ACTIVE
+28,FIENENA,Richard Désiré,Masculin,Manja,MENABE,IRMAR,Non_Affilié,ACTIVE
+29,FIHEREZAVINANY,Mena,Masculin,Morafenobe,MELAKY,IRMAR,GPIF1,ACTIVE
+30,FOMENDRAZA,Haingo Elisette,Feminin,Ambositra,AMORON'I MANIA,IRMAR,IRMAR,ACTIVE
+31,GOULAMALY,Jacques Bruno Fils,Masculin,Antanimora Sud,ANDROY,Indépendant,GPIF1,ACTIVE
+32,HANOGNONA,Hervé,Masculin,Betioky Sud,ATSIMO ANDREFANA,IRMAR,IRMAR,ACTIVE
+33,IBRAHIM,Issa Charles,Masculin,Antsiranana I,DIANA,Indépendant,GPIF1,ACTIVE
+34,IMBIKY,Herilaza,Masculin,Sainte Marie,ANALANJIROFO,IRMAR,IRMAR,ACTIVE
+35,JAOZANDRY,René,Masculin,Bealanana,SOFIA,Indépendant,GPIF3,ACTIVE
+36,JEAN,FRANCOIS Michel,Masculin,Antsirabe I,VAKINANKARATRA,Firaisankina,FIRAISANKINA,ACTIVE
+37,MAHAVITARA,Sylvestre,Masculin,Vangaindrano,ATSIMO ATSINANANA,Indépendant,IRMAR,ACTIVE
+38,MAMANGY,Norbert,Masculin,Sambava,SAVA,IRMAR,Non_Affilié,ACTIVE
+39,MAMIHAJA,Charlot,Masculin,Mananjary,VATOVAVY,Firaisankina,FIRAISANKINA,ACTIVE
+40,MAMINIRINA,Jolce Emilien,Masculin,Manakara,FITOVINANY,IRMAR,IRMAR,ACTIVE
+41,MANANTENA,Hajanirina Dinah,Masculin,Ifanadiana,VATOVAVY,IRMAR,Non_Affilié,ACTIVE
+42,MANASOA,Donat Tang,Masculin,Mahanoro,ATSINANANA,IRMAR,IRMAR,ACTIVE
+43,MANDRARA,Louis Fernandy,Masculin,Ambilobe,DIANA,Indépendant,GPIF1,ACTIVE
+44,RAKOTOHARITIANA,Navalona Franky Aimé,Masculin,Antananarivo III,ANALAMANGA,Mouvement Gasikara,Non_Affilié,ACTIVE
+45,MARA,Volamiranty Donna,Feminin,Nosy Varika,VATOVAVY,IRMAR,Non_Affilié,ACTIVE
+46,MARINDRY,Rasolohery Andry Chrinssant,Masculin,Marovoay,BOENY,Indépendant,Non_Affilié,ACTIVE
+47,MBADE,Jeannine Gabrielle,Feminin,Maevatanana,BETSIBOKA,IRMAR,GPIF3,ACTIVE
+48,MENAVOLO,Alban,Masculin,Soanierana Ivongo,ANALANJIROFO,Indépendant,GPIF1,ACTIVE
+49,MICHELLE,Bavy Angelica,Feminin,Fenerive Est,ANALANJIROFO,IRMAR,GPIF3,ACTIVE
+50,MILAVONJY,Andriasy Philobert,Masculin,Ambovombe,ANDROY,IRMAR,IRMAR,ACTIVE
+51,MONG,MANN Bismark,Masculin,Ihosy,IHOROMBE,IRMAR,GPIF3,ACTIVE
+52,NAHARIMAMY,Lucien Irmah,Feminin,Toamasina I,ATSINANANA,IRMAR,IRMAR,ACTIVE
+53,NAKANY,Charly Zafimagnely,Masculin,Beroroha,ATSIMO ANDREFANA,Indépendant,GPIF3,ACTIVE
+54,NASIRA,Julien,Masculin,Antalaha,SAVA,IRMAR,Non_Affilié,ACTIVE
+55,NOURDINE,Chabani,Masculin,Tolagnaro,ANOSY,Indépendant,GPIF1,ACTIVE
+56,OLIVIER,Rabeamina,Masculin,Port Berg├®,SOFIA,Indépendant,GPIF1,ACTIVE
+57,PEPIN,Michou,Masculin,Ankazoabo,ATSIMO ANDREFANA,IRMAR,Non_Affilié,ACTIVE
+58,RABEHARISON,Bernardin,Masculin,Befandriana Nord,SOFIA,Indépendant,GPIF1,ACTIVE
+59,RALIFOSY,Laurent,Masculin,,,AVI (Firaisan-kina),FIRAISANKINA,ACTIVE
+60,RABENIRINA,Maminiaina Solondraibe,Masculin,Ambohidratrimo,ANALAMANGA,Firaisankina,FIRAISANKINA,ACTIVE
+61,RABY,SAVATSARAH Ain' Harimanga Gabrielle,Feminin,Farafangana,ATSIMO ATSINANANA,Indépendant,IRMAR,ACTIVE
+62,RADAFINDRANARO,ANDRIAMANGA Rijaniaina Thierry,Masculin,Avaradrano,ANALAMANGA,IRMAR,GPIF2,ACTIVE
+63,RAFANONIAINA,Haja Rivolala Elysée Théodore,Masculin,Anosibe An'Ala,ALAOTRA MANGORO,IRMAR,GPIF2,ACTIVE
+64,RAFIDIMANANA,Désiré,Masculin,Antananarivo IV,ANALAMANGA,IRMAR,GPIF1,ACTIVE
+65,RAFIDIMANANA,Narson,Masculin,Antanifotsy,VAKINANKARATRA,FIraisankina,FIRAISANKINA,ACTIVE
+66,HERINIAINA,Tia Solofomanga,Masculin,Mahajanga,BOENY,,IRMAR,ACTIVE
+67,RAHARIMANARIVO,Voahanginiaina Berthine,Feminin,Atsimondrano,ANALAMANGA,Firaisankina TIM,FIRAISANKINA,ACTIVE
+68,MAHARANTE,Rakotonandrasana Jean de Dieu Benjamin,Masculin,Toliara I,ATSIMO ANDREFANA,,IRMAR,ACTIVE
+69,SYLVAIN,Claude Emile,,Antsiranana I,DIANA,,IRMAR,ACTIVE
+70,RAHOLDINA,RANAIVO Herinantsoina,Masculin,Antananarivo V,ANALAMANGA,IRMAR,IRMAR,ACTIVE
+71,RAHOLIJAONA,Harson,Masculin,Tsiroanomandidy,BONGOLAVA,Indépendant,Non_Affilié,ACTIVE
+72,RAJAOBELINA,Lova Herizo,Masculin,Moramanga,ALAOTRA MANGORO,IRMAR,GPIF1,ACTIVE
+73,RAJAONARY,Andriantsizafy Mahenintsoa,Masculin,Ambatomainty,MELAKY,Indépendant,GPIF2,ACTIVE
+74,RAJOELIMALALA,Herihasina Eljo,Masculin,Antanifotsy,VAKINANKARATRA,Indépendant,GPIF1,ACTIVE
+75,RAJOELINA,Andriam-harimanana Seth,Masculin,Fianarantsoa,HAUTE MATSIATRA,IRMAR,GPIF3,ACTIVE
+76,RAKOTOARIMANANA,Patrice,Masculin,Andilamena,ALAOTRA MANGORO,IRMAR,GPIF2,ACTIVE
+77,RAKOTOARISOA,Nirina Fenohery Johnny,Masculin,Ambohidratrimo,ANALAMANGA,IRMAR,GPIF2,ACTIVE
+78,RAKOTOMALALA,Biri Golbert,Masculin,Morombe,ATSIMO ANDREFANA,Indépendant,GPIF1,ACTIVE
+79,RAKOTOMALALA,Miarintsoa,Masculin,Ambatolampy,VAKINANKARATRA,Indépendant,Non_Affilié,ACTIVE
+80,RAKOTOMANGA,Lantoarivola Sedera,Feminin,Antananarivo II,ANALAMANGA,IRMAR,IRMAR,ACTIVE
+81,RAKOTONDRABESA,Pierre Aimé,Masculin,Arivonimamo,ITASY,FIVOI,IRMAR,ACTIVE
+82,RAKOTONDRAMANITRA,Vahiny Felix,Masculin,Amparafaravola,ALAOTRA MANGORO,Indépendant,GPIF2,ACTIVE
+83,RAKOTONDRASOA,Fetra,Masculin,Miarinarivo,ITASY,IRMAR,IRMAR,ACTIVE
+84,RAKOTONIAINA,Lova Andrien Marie,Masculin,Miandrivazo,MENABE,Firaisankina,FIRAISANKINA,ACTIVE
+85,RAKOTONIAINA,Pety,Masculin,Ikalamavony,HAUTE MATSIATRA,Indépendant,GPIF1,ACTIVE
+86,RAKOTONIRINA,Richard Joseph,Masculin,Amboasary,ANOSY,Indépendant,GPIF1,ACTIVE
+87,RAKOTORAHALAHY,Modeste,Masculin,Mandoto,VAKINANKARATRA,Indépendant,GPIF2,ACTIVE
+88,RAKOTOSON,Hubert,Masculin,Mahanoro,ATSINANANA,Indépendant,GPIF1,ACTIVE
+89,RAMBOARIVELO,Andrianantenaina Jocelyn Willy,Masculin,Antananarivo III,ANALAMANGA,,FIRAISANKINA,ACTIVE
+90,RALAMBOZAFIMBOLOLONA,Razafitsimialona Andriantsivoafetra,Masculin,Antananarivo V,ANALAMANGA,Firaisankina,FIRAISANKINA,ACTIVE
+91,RALAMBOZAFY,Raoto Andrianirinarivo,Masculin,Isandra,HAUTE MATSIATRA,IRMAR,GPIF1,ACTIVE
+92,RAMANAMBITA,Richade Houssen Ismaël,Masculin,Beloha,ANDROY,Indépendant,GPIF1,ACTIVE
+93,RAMANANARIVO,Handry Orlando,Masculin,Mahajanga II,BOENY,Indépendant,GPIF2,ACTIVE
+94,RAMANANJARASOA,Clarisse Eugénie,Feminin,Ivohibe,IHOROMBE,IRMAR,IRMAR,ACTIVE
+95,RANDRIANARISON,Rivo Setra,Masculin,Soavinandriana,ITASY,Indépendant,Non_Affilié,ACTIVE
+96,RAMILISON,Andriamampionona Nomenjanahary,Masculin,Faratsiho,VAKINANKARATRA,Firaisankina,FIRAISANKINA,ACTIVE
+97,RAMINOALISOA,Andriniaina Herizo,Masculin,Fenerive Est,ANALANJIROFO,Indépendant,GPIF1,ACTIVE
+98,RANARIVELO,Lucien,Masculin,Tsiroanomandidy,BONGOLAVA,Indépendant,GPIF2,ACTIVE
+99,RANDRIAMALALA,Thony,Masculin,Tsaratanana,BETSIBOKA,IRMAR,GPIF2,ACTIVE
+100,RANDRIAMAMPIANINA,Rajerison Antoine,Masculin,Arivonimamo,ITASY,FIVOI,Non_Affilié,ACTIVE
+101,RANDRIAMANAMPISOA,Alfred,Masculin,Antsirabe II,VAKINANKARATRA,IRMAR,GPIF1,ACTIVE
+102,RANDRIAMANANTENA,Stipio,Masculin,Voh├®mar,SAVA,IRMAR,GPIF2,ACTIVE
+103,RANDRIAMASINORO,Tahiry Ny Rina,Masculin,Antananarivo IV,ANALAMANGA,Firaisankina,FIRAISANKINA,ACTIVE
+104,RANDRIANANTENAINA,Olivier Antonny José,Masculin,Antsirabe II,VAKINANKARATRA,Firaisankina,FIRAISANKINA,ACTIVE
+105,RANDRIANARISOA,Bien Aimé Arsène,Masculin,Fenoarivobe,BONGOLAVA,IRMAR,GPIF1,ACTIVE
+106,RANDRIANARISOA,Stanislas,Masculin,Antananarivo II,ANALAMANGA,Firaisankina,FIRAISANKINA,ACTIVE
+107,RANDRIANARIVO,Edwin,Masculin,Ambato Boeny,BOENY,Indépendant,GPIF1,ACTIVE
+108,RANDRIANASOLO,Augustin,Masculin,Marolambo,ATSINANANA,IRMAR,GPIF2,ACTIVE
+109,RANDRIANASOLO,Jean Nicolas,Masculin,Betroka,ANOSY,GJMP,Non_Affilié,ACTIVE
+110,RANDRIANASOLO,Tojosoa Idéal,Masculin,Vangaindrano,ATSIMO ATSINANANA,IRMAR,GPIF2,ACTIVE
+111,RANDRIANASOLONIAIKO,Siteny Thierry,Masculin,Toliara I,ATSIMO ANDREFANA,Firaisankina,FIRAISANKINA,ACTIVE
+112,RANDRIARISON,Maurice Lucien,Masculin,Mananjary,VATOVAVY,IRMAR,GPIF3,ACTIVE
+113,RANDRIATAHINAMALALA,Livasoa Moratiavina,Masculin,Betafo,VAKINANKARATRA,Firaisankina,FIRAISANKINA,ACTIVE
+114,RAPHAEL,Jean Francois,Masculin,Sakaraha,ATSIMO ANDREFANA,Firaisankina,FIRAISANKINA,ACTIVE
+115,RAPHAELIEN,Solofoniaina Emilien Narson,Masculin,Mampikony,SOFIA,IRMAR,GPIF3,ACTIVE
+116,RASOAMALALA,Honorine,Feminin,Ambohimahasoa,HAUTE MATSIATRA,IRMAR,GPIF1,ACTIVE
+117,RASOANIRINA,Marcelline,Feminin,Ambalavao,HAUTE MATSIATRA,Indépendant,GPIF1,ACTIVE
+118,RASOLOMANANA,Beby Olivier,Masculin,Mandritsara,SOFIA,IRMAR,GPIF2,ACTIVE
+119,RATOLOJANAHARY,Arsène,Masculin,Midongy Atsimo,ATSIMO ATSINANANA,IRMAR,GPIF3,ACTIVE
+120,RATSIMANDRIONA,Aida Hardy,Feminin,Tolagnaro,ANOSY,IRMAR,GPIF3,ACTIVE
+121,RATSIRAKA,Iarovana Roland,Masculin,Toamasina I,ATSINANANA,Kolektifa,Non_Affilié,ACTIVE
+122,RATSIRAKA,Sophie Soamiadana,Feminin,Vatomandry,ATSINANANA,Indépendant,Non_Affilié,ACTIVE
+123,RATSIVAHINISOLO,Andriniony,Masculin,Atsimondrano,ANALAMANGA,IRMAR,IRMAR,ACTIVE
+124,RAVELONASY,Barthélemy Samuel,Masculin,Brickaville,ATSINANANA,IRMAR,GPIF2,ACTIVE
+125,RAVONIARISOA,Mariette,Feminin,Ikongo,FITOVINANY,IRMAR,IRMAR,ACTIVE
+126,RAYMOND,,Masculin,Antsiranana II,DIANA,IRMAR,GPIF1,ACTIVE
+127,RAZAFIHARISON,Andriamanantena,Masculin,Ampanihy,ATSIMO ANDREFANA,IRMAR,Non_Affilié,ACTIVE
+128,RAZAFIMAHATRATRA,Daniel Jean Christian,Masculin,Ambalavao,HAUTE MATSIATRA,IRMAR,IRMAR,ACTIVE
+129,RAZAFIMAHEFA,Tianarivelo Edouard,Masculin,Ambatolampy,VAKINANKARATRA,IRMAR,GPIF1,ACTIVE
+130,RANDRIAMISANDRATRA,Barthélémy,Masculin,Antananarivo I,ANALAMANGA,FIRAISANKINA,FIRAISANKINA,ACTIVE
+131,RAZAFIMANDIMBY,Harijao Percy,Masculin,Ankazobe,ANALAMANGA,FIVOI,IRMAR,ACTIVE
+132,RAZAFIMANDROSO,NEE RAZANAJATO Virginie,Feminin,Moramanga,ALAOTRA MANGORO,IRMAR,IRMAR,ACTIVE
+133,RAZAFINDRABARY,Narson Seth Jean Richard,Masculin,Ambatofinandrahana,AMORON'I MANIA,IRMAR,GPIF3,ACTIVE
+134,RAZAFINDRAMASY,Faralahy Célestin,Masculin,Benenitra,ATSIMO ANDREFANA,Parti Vert,GPIF1,ACTIVE
+135,RAZAFINDRIATSARA,Jonhson Anatol,Masculin,Befotaka,ATSIMO ATSINANANA,IRMAR,GPIF1,ACTIVE
+136,RAZAFINIMARO,Désiré,Masculin,Antsirabe I,VAKINANKARATRA,IRMAR,GPIF2,ACTIVE
+137,RAZAFINJATO,Aurelie Marie Augustine,Feminin,Vohibato,HAUTE MATSIATRA,IRMAR,Non_Affilié,ACTIVE
+138,RAZAFINTSIHOARANA,Edison,Masculin,Anjozorobe,ANALAMANGA,Firaisankina,FIRAISANKINA,ACTIVE
+139,RAZAFITSIALA,Velomanana Solomampionona,Masculin,Vohipeno,FITOVINANY,Indépendant,GPIF1,ACTIVE
+140,RAZAKA,ANDRIAMIHAHO Barthelemy,Masculin,Ihosy,IHOROMBE,IRMAR,IRMAR,ACTIVE
+141,RAZAKAMANANA,André,Masculin,Mandritsara,SOFIA,Indépendant,GPIF1,ACTIVE
+142,RAZANAMANDIMBISOA,Tantely,Feminin,Antananarivo VI,ANALAMANGA,IRMAR,IRMAR,ACTIVE
+143,RAZARA,Pierre Ravolaza Fidèle,Masculin,Ambatondrazaka,ALAOTRA MANGORO,Firaisankina,FIRAISANKINA,ACTIVE
+144,RESAMPA,Ramanohy André Hajaharimalala Organës,Masculin,Morondava,MENABE,IRMAR,IRMAR,ACTIVE
+145,RIVOTIANA,Richard Jean Bosco,Masculin,Lalangina,HAUTE MATSIATRA,IRMAR,IRMAR,ACTIVE
+146,ROCHELIN,Houssen,Masculin,Toliara II,ATSIMO ANDREFANA,Indépendant,GPIF1,ACTIVE
+147,ROILAHY,,Masculin,Toamasina II,ATSINANANA,IRMAR,GPIF1,ACTIVE
+148,SAHONDRARIMALALA,Marie Michelle,Feminin,Fianarantsoa,HAUTE MATSIATRA,IRMAR,IRMAR,ACTIVE
+149,SAID,ZAKANIAINA Mahafaly Joseph,Masculin,Soalala,BOENY,IRMAR,GPIF1,ACTIVE
+150,SAMBO,,Masculin,Iakora,IHOROMBE,Indépendant,GPIF3,ACTIVE
+151,SAMUEL,,Masculin,Mananara Nord,ANALANJIROFO,IRMAR,GPIF1,ACTIVE
+152,SAORY,Christian,Masculin,Belo sur Tsiribihina,MENABE,Indépendant,GPIF1,ACTIVE
+153,MANANKO,Jerome,,Analalava,SOFIA,,IRMAR,ACTIVE
+154,SYLVIE,Liva Gervais,Feminin,Besalampy,MELAKY,IRMAR,GPIF1,ACTIVE
+155,TARKA,Jean Michel,Masculin,Antanambao Manampontsy,ATSINANANA,Indépendant,GPIF1,ACTIVE
+156,TOKELY,Justin,Masculin,Sambava,SAVA,IRMAR,IRMAR,ACTIVE
+157,TOLIA,Bernard,Masculin,Tsihombe,ANDROY,IRMA,GPIF3,ACTIVE
+158,TSARADIA,Marco,Masculin,Ampanihy,ATSIMO ANDREFANA,Indépendant,GPIF1,ACTIVE
+159,TSIKIVY,Adrien,Masculin,Kandreho,BETSIBOKA,IRMAR,GPIF3,ACTIVE
+160,TSITARA,Rojers Osman,Masculin,Toliara II,ATSIMO ANDREFANA,IRMAR,IRMAR,ACTIVE
+161,VELONJARA,Théophiline,Feminin,Maintirano,MELAKY,IRMAR,GPIF1,ACTIVE
+162,VOLAMAHAZAKA,Felix Boris,Masculin,Vavatenina,ANALANJIROFO,IRMAR,GPIF1,ACTIVE
+163,VOLOLOMBOAHANGY,Tsiriniaina Narindra,Feminin,Amparafaravola,ALAOTRA MANGORO,Indépendant,GPIF1,ACTIVE
+,AHMAD,Ahmad,Masculin,Mitsinjo,BOENY,Indépendant,,RESIGNED
+,ANDRIAMAMPANDRY,Todisoa Manampy,Masculin,,,Firaisankina,,NOMINATED
+,RABENIRINA,Jean Jacques,Masculin,Betioky Sud,ATSIMO ANDREFANA,Firaisankina,,DECEASED
+,RAHANTANIRINA,Lalao,Feminin,Mahajanga,BOENY,IRMAR,,RESIGNED
+,RAHAROARILALA,Tinoka Roberto Michaël,Masculin,Toliara I,ATSIMO ANDREFANA,IRMAR,,RESIGNED
+,RAHELIHANTA,Jocelyne,Feminin,Antsiranana I,DIANA,IRMAR,,RESIGNED
+,RALAMBOMANANA,Fenoherintsoa,Masculin,,,Firaisankina,,NOMINATED
+,RAZAFIMANANTSOA,Lobo Hanitriniaina,Feminin,,,Firaisankina,,NOMINATED
+,SOAFILIRA,Princia,Feminin,Analalava,SOFIA,IRMAR,,RESIGNED
+,TREMPIER,Michaël,Masculin,Vohibato,HAUTE MATSIATRA,IRMAR,,ACTIVE
+,RAZAFINDRAKOTO,Victor,Masculin,Fianarantsoa,HAUTE MATSIATRA,TGV,,RESIGNED
+,MALAINKORATSY,Jocelyn,Masculin,Nosy Varika,VATOVAVY,TGV,,ACTIVE
+,MANDRINDRARIVONY,Ogascar Fenosoa,Masculin,,,Indépendant,,NOMINATED
+,RAMANATANANA,Roméo Christophe,Masculin,Soavinandriana,ITASY,Indépendant,,RESIGNED

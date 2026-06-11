@@ -1,0 +1,2610 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memoire Parlementaire</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+         :root {
+            --bg: #ffffff;
+            --bg-secondary: #f7f7f5;
+            --bg-card: #ffffff;
+            --bg-input: #f4f4f2;
+            --border: #e8e8e4;
+            --text-primary: #1a1a18;
+            --text-secondary: #6b6b67;
+            --text-muted: #9b9b97;
+            --green: #007E3A;
+            --green-dark: #005c2b;
+            --green-light: #e8f5ee;
+            --red: #FC3E32;
+            --red-light: #fff0ef;
+            --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.10);
+            --nav-bg: rgba(255, 255, 255, 0.92);
+            --header-bg: #ffffff;
+            --footer-bg: #1a1a18;
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --radius-full: 999px;
+        }
+        
+        [data-theme="dark"] {
+            --bg: #111110;
+            --bg-secondary: #1a1a18;
+            --bg-card: #1e1e1c;
+            --bg-input: #252523;
+            --border: #2e2e2c;
+            --text-primary: #f0f0ec;
+            --text-secondary: #a0a09c;
+            --text-muted: #6a6a66;
+            --green-light: #0d2b1a;
+            --red-light: #2b0f0e;
+            --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+            --nav-bg: rgba(17, 17, 16, 0.92);
+            --header-bg: #111110;
+            --footer-bg: #0a0a09;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            transition: background 0.3s ease, color 0.3s ease;
+            line-height: 1.6;
+        }
+        
+        .app-shell {
+            display: flex;
+            min-height: 100vh;
+        }
+        
+        .sidebar {
+            width: 260px;
+            min-width: 260px;
+            background: var(--bg-card);
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: row;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow: hidden;
+            z-index: 200;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .sidebar-flag {
+            width: 5px;
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+        }
+        
+        .sf-white {
+            flex: 1;
+            background: var(--border);
+        }
+        
+        .sf-red {
+            flex: 1;
+            background: #FC3E32;
+        }
+        
+        .sf-green {
+            flex: 1;
+            background: #007E3A;
+        }
+        
+        .sidebar-logo {
+            padding: 2rem 1.25rem 1.25rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .sidebar-logo-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--green-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.75rem;
+            border: 2px solid var(--green);
+        }
+        
+        .sidebar-brand {
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: #C8860A;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            line-height: 1.4;
+        }
+        
+        .sidebar-motto {
+            font-size: 0.68rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+        
+        .sidebar-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 0.375rem;
+            padding: 1.25rem 0.875rem;
+            flex: 1;
+            overflow-y: auto;
+        }
+        
+        .sidebar-inner {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .nav-btn {
+            background: transparent;
+            border: none;
+            padding: 0.75rem 1rem;
+            font-size: 0.9rem;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+            cursor: pointer;
+            border-radius: var(--radius-md);
+            transition: all 0.2s ease;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            text-align: left;
+            width: 100%;
+        }
+        
+        .nav-btn .material-symbols-outlined {
+            font-size: 20px;
+            font-variation-settings: 'FILL' 0;
+            flex-shrink: 0;
+        }
+        
+        .nav-btn:hover {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+        }
+        
+        .nav-btn.active {
+            background: var(--green);
+            color: white;
+        }
+        
+        .nav-btn.active .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        .content-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            overflow: hidden;
+        }
+        
+        .topbar {
+            background: var(--header-bg);
+            border-bottom: 1px solid var(--border);
+            padding: 1.25rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .topbar-title h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.75rem;
+            color: var(--text-primary);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+        
+        .topbar-title h1 span {
+            color: var(--green);
+        }
+        
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 0.82rem;
+            font-weight: 400;
+            margin-top: 0.2rem;
+        }
+        
+        .topbar-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .topbar-brand h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+            text-align: right;
+        }
+        
+        .topbar-brand h1 span {
+            color: var(--green);
+        }
+        
+        .topbar-brand .subtitle {
+            font-size: 0.72rem;
+            text-align: right;
+        }
+        
+        .theme-toggle {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-full);
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--text-secondary);
+            transition: all 0.2s ease;
+            flex-shrink: 0;
+        }
+        
+        .theme-toggle:hover {
+            background: var(--green);
+            color: white;
+            border-color: var(--green);
+        }
+        
+        .theme-toggle .material-symbols-outlined {
+            font-size: 20px;
+        }
+        
+        .flag {
+            display: flex;
+            height: 3px;
+        }
+        
+        .flag-green {
+            flex: 1;
+            background: #007E3A;
+        }
+        
+        .flag-red {
+            flex: 1;
+            background: #FC3E32;
+        }
+        
+        .flag-white {
+            flex: 1;
+            background: var(--border);
+        }
+        
+        main {
+            flex: 1;
+            padding: 2rem;
+            overflow-y: auto;
+        }
+        
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.25s ease;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(8px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .search-hero {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 1.5rem;
+        }
+        
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: var(--bg-input);
+            border-radius: var(--radius-full);
+            border: 1.5px solid var(--border);
+            transition: all 0.2s ease;
+        }
+        
+        .search-box:focus-within {
+            border-color: var(--green);
+            box-shadow: 0 0 0 3px rgba(0, 126, 58, 0.1);
+        }
+        
+        .search-icon {
+            padding: 0 1rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+        }
+        
+        .search-icon .material-symbols-outlined {
+            font-size: 20px;
+        }
+        
+        .search-box input {
+            flex: 1;
+            padding: 0.875rem 0;
+            border: none;
+            background: transparent;
+            font-size: 1rem;
+            font-family: 'DM Sans', sans-serif;
+            outline: none;
+            color: var(--text-primary);
+        }
+        
+        .search-box input::placeholder {
+            color: var(--text-muted);
+        }
+        
+        .search-box button {
+            background: var(--green);
+            border: none;
+            color: white;
+            padding: 0.625rem 1.375rem;
+            border-radius: var(--radius-full);
+            cursor: pointer;
+            margin: 0.25rem;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            transition: background 0.2s ease;
+        }
+        
+        .search-box button .material-symbols-outlined {
+            font-size: 18px;
+        }
+        
+        .search-box button:hover {
+            background: var(--green-dark);
+        }
+        
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .results-count {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+        
+        .results-count span {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+        
+        .results-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.875rem;
+        }
+        
+        .result-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+        
+        .result-card:hover {
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .result-depute {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .result-depute .material-symbols-outlined {
+            color: var(--green);
+            font-size: 20px;
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        .result-meta {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+        }
+        
+        .result-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        
+        .result-meta .material-symbols-outlined {
+            font-size: 14px;
+        }
+        
+        .result-content {
+            margin: 1rem 0;
+            line-height: 1.75;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .result-content mark {
+            background: #fef08a;
+            padding: 0 2px;
+            border-radius: 3px;
+            color: inherit;
+        }
+        
+        [data-theme="dark"] .result-content mark {
+            background: #713f12;
+        }
+        
+        .result-footer {
+            display: flex;
+            gap: 0.5rem;
+            font-size: 0.8rem;
+            flex-wrap: wrap;
+        }
+        
+        .result-tag {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            padding: 0.2rem 0.7rem;
+            border-radius: var(--radius-full);
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        
+        .result-tag--highlight {
+            background: #e8f0fe;
+            border-color: #4285f4;
+            color: #1a73e8;
+            font-weight: 600;
+        }
+        
+        [data-theme="dark"] .result-tag--highlight {
+            background: #1a2744;
+            border-color: #4285f4;
+            color: #8ab4f8;
+        }
+        
+        .results-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .result-tag .material-symbols-outlined {
+            font-size: 13px;
+        }
+        
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 0.375rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .pagination button {
+            background: var(--bg-card);
+            border: 1.5px solid var(--border);
+            padding: 0.5rem 0.875rem;
+            cursor: pointer;
+            border-radius: var(--radius-sm);
+            color: var(--text-secondary);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.875rem;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+        }
+        
+        .pagination button .material-symbols-outlined {
+            font-size: 16px;
+        }
+        
+        .pagination button:hover:not(:disabled) {
+            background: var(--green);
+            color: white;
+            border-color: var(--green);
+        }
+        
+        .pagination button.active {
+            background: var(--green);
+            color: white;
+            border-color: var(--green);
+            font-weight: 600;
+        }
+        
+        .pagination button:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+        
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.25rem;
+            margin-bottom: 1.75rem;
+        }
+        
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+        
+        .stat-card:hover {
+            box-shadow: var(--shadow-md);
+            border-color: var(--green);
+            transform: translateY(-2px);
+        }
+        
+        .stat-card .stat-arrow {
+            margin-left: auto;
+            color: var(--text-muted);
+            font-size: 18px;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        
+        .stat-card:hover .stat-arrow {
+            opacity: 1;
+            color: var(--green);
+        }
+        
+        .dash-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0.45rem 0.6rem;
+            margin-bottom: 2px;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: background 0.15s;
+            font-size: 0.9rem;
+        }
+        
+        .dash-item:hover {
+            background: var(--bg-secondary);
+        }
+        
+        .dash-item:hover .dash-arrow {
+            opacity: 1;
+        }
+        
+        .dash-arrow {
+            margin-left: auto;
+            color: var(--green);
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.15s;
+        }
+        
+        .stat-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--green-light);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .stat-icon .material-symbols-outlined {
+            font-size: 26px;
+            color: var(--green);
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        .stat-info h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1;
+        }
+        
+        .stat-info p {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 0.3rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+            gap: 1.25rem;
+        }
+        
+        .chart-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem;
+        }
+        
+        .chart-card h3 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        
+        .chart-card h3 .material-symbols-outlined {
+            font-size: 18px;
+            color: var(--red);
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        .deputies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        
+        .deputy-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .deputy-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--green);
+        }
+        
+        .deputy-avatar {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--green), var(--green-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+        
+        .deputy-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+        .deputy-info h4 {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        
+        .deputy-info p {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            margin-top: 0.15rem;
+        }
+        
+        .deputy-info p .material-symbols-outlined {
+            font-size: 14px;
+            color: var(--green);
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        .list-header {
+            margin-bottom: 1.5rem;
+        }
+        
+        .list-search {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+        
+        .list-search input,
+        .list-search select {
+            padding: 0.7rem 1rem;
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius-sm);
+            background: var(--bg-card);
+            color: var(--text-primary);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.9rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        
+        .list-search input:focus,
+        .list-search select:focus {
+            border-color: var(--green);
+        }
+        
+        .list-search input {
+            flex: 2;
+            min-width: 200px;
+        }
+        
+        .list-search select {
+            flex: 1;
+            min-width: 150px;
+        }
+        
+        .seances-list,
+        .laws-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.875rem;
+        }
+        
+        .seance-card,
+        .law-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 1.25rem;
+            transition: box-shadow 0.2s;
+        }
+        
+        .seance-card:hover,
+        .law-card:hover {
+            box-shadow: var(--shadow-md);
+        }
+        
+        .law-number {
+            font-family: 'DM Mono', monospace;
+            color: var(--green);
+            font-weight: 700;
+            font-size: 0.875rem;
+        }
+        
+        .law-status {
+            padding: 0.2rem 0.7rem;
+            border-radius: var(--radius-full);
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .status-depot {
+            background: #fff7ed;
+            color: #c2660a;
+        }
+        
+        .status-examen {
+            background: var(--green-light);
+            color: var(--green);
+        }
+        
+        .status-adoption {
+            background: #ecfdf5;
+            color: #059669;
+        }
+        
+        [data-theme="dark"] .status-depot {
+            background: #2a1800;
+            color: #f59e0b;
+        }
+        
+        [data-theme="dark"] .status-examen {
+            background: var(--green-light);
+            color: #4ade80;
+        }
+        
+        [data-theme="dark"] .status-adoption {
+            background: #022c1e;
+            color: #34d399;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-muted);
+        }
+        
+        .loading .material-symbols-outlined {
+            font-size: 2.5rem;
+            color: var(--green);
+            display: block;
+            margin: 0 auto 0.75rem;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 3.5rem;
+            color: var(--text-muted);
+        }
+        
+        .no-results .material-symbols-outlined {
+            font-size: 3rem;
+            display: block;
+            margin-bottom: 0.75rem;
+            opacity: 0.4;
+        }
+        
+        .deputy-detail-header {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .deputy-detail-back {
+            position: absolute;
+            top: 1.25rem;
+            right: 1.25rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-full);
+            padding: 0.4rem 1rem;
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            transition: all 0.2s;
+        }
+        
+        .deputy-detail-back:hover {
+            background: var(--green);
+            color: white;
+            border-color: var(--green);
+        }
+        
+        .deputy-detail-avatar {
+            width: 80px;
+            height: 80px;
+            flex-shrink: 0;
+            background: linear-gradient(135deg, var(--green), var(--green-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.75rem;
+            overflow: hidden;
+        }
+        
+        .deputy-detail-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+        .deputy-detail-info h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .deputy-detail-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 0.5rem;
+        }
+        
+        .deputy-detail-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--radius-full);
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+        
+        .deputy-detail-badge .material-symbols-outlined {
+            font-size: 14px;
+            color: var(--green);
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        .deputy-detail-count {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            background: var(--green-light);
+            border: 1px solid var(--green);
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--radius-full);
+            font-size: 0.8rem;
+            color: var(--green);
+            font-weight: 600;
+        }
+        
+        .intervention-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            margin-bottom: 0.875rem;
+            transition: box-shadow 0.2s;
+        }
+        
+        .intervention-card:hover {
+            box-shadow: var(--shadow-md);
+        }
+        
+        .intervention-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .intervention-date {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        
+        .intervention-date .material-symbols-outlined {
+            font-size: 14px;
+        }
+        
+        .intervention-type {
+            background: var(--red-light);
+            color: var(--red);
+            padding: 0.2rem 0.7rem;
+            border-radius: var(--radius-full);
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .intervention-content {
+            line-height: 1.75;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin: 0.75rem 0;
+        }
+        
+        .intervention-footer {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 0.75rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid var(--border);
+        }
+        
+        .intervention-tag {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            padding: 0.2rem 0.7rem;
+            border-radius: var(--radius-full);
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        
+        .intervention-tag .material-symbols-outlined {
+            font-size: 12px;
+        }
+        
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(4px);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            animation: fadeIn 0.2s ease;
+        }
+        
+        .modal {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            width: 100%;
+            max-width: 560px;
+            box-shadow: var(--shadow-lg);
+            animation: slideUp 0.25s ease;
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .modal-header h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .modal-header h3 .material-symbols-outlined {
+            color: var(--green);
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        .modal-close {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--text-muted);
+            padding: 0.25rem;
+            border-radius: var(--radius-sm);
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+        }
+        
+        .modal-close:hover {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+        }
+        
+        .modal-body {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+        
+        .form-group label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 0.65rem 0.875rem;
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius-sm);
+            background: var(--bg-input);
+            color: var(--text-primary);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.9rem;
+            outline: none;
+            transition: border-color 0.2s;
+            width: 100%;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--green);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        .modal-footer {
+            display: flex;
+            justify-content: flex-end;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            padding-top: 1.25rem;
+            border-top: 1px solid var(--border);
+        }
+        
+        .btn-cancel {
+            background: var(--bg-secondary);
+            border: 1.5px solid var(--border);
+            color: var(--text-secondary);
+            padding: 0.6rem 1.25rem;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        
+        .btn-cancel:hover {
+            background: var(--border);
+        }
+        
+        .btn-submit {
+            background: var(--green);
+            border: none;
+            color: white;
+            padding: 0.6rem 1.5rem;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: background 0.2s;
+        }
+        
+        .btn-submit:hover {
+            background: var(--green-dark);
+        }
+        
+        .btn-submit:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+        .btn-delete-confirm {
+            background: var(--red);
+            border: none;
+            color: white;
+            padding: 0.6rem 1.5rem;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: background 0.2s;
+        }
+        
+        .btn-delete-confirm:hover {
+            background: #d42e23;
+        }
+        
+        .law-card {
+            position: relative;
+        }
+        
+        .law-card-actions {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            display: flex;
+            gap: 0.4rem;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        
+        .law-card:hover .law-card-actions {
+            opacity: 1;
+        }
+        
+        .btn-law-delete {
+            background: var(--red-light);
+            border: 1px solid var(--red);
+            color: var(--red);
+            border-radius: var(--radius-sm);
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .btn-law-delete:hover {
+            background: var(--red);
+            color: white;
+        }
+        
+        .btn-law-delete .material-symbols-outlined {
+            font-size: 16px;
+        }
+        
+        .btn-add-law {
+            background: var(--green);
+            border: none;
+            color: white;
+            padding: 0.6rem 1.25rem;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: background 0.2s;
+            white-space: nowrap;
+        }
+        
+        .btn-add-law:hover {
+            background: var(--green-dark);
+        }
+        
+        .btn-add-law .material-symbols-outlined {
+            font-size: 18px;
+        }
+        
+        footer {
+            background: var(--footer-bg);
+            color: #9b9b97;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            font-size: 0.8rem;
+        }
+        
+        @media (max-width: 768px) {
+            .app-shell {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                min-width: unset;
+                height: auto;
+                position: relative;
+                flex-direction: column;
+            }
+            .sidebar-flag {
+                width: 100%;
+                height: 4px;
+                flex-direction: row;
+            }
+            .sidebar-logo {
+                padding: 1rem;
+            }
+            .sidebar-nav {
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding: 0.5rem;
+                gap: 0.25rem;
+                border-top: 1px solid var(--border);
+            }
+            .nav-btn {
+                flex: 1 1 auto;
+                padding: 0.5rem 0.75rem;
+                font-size: 0.8rem;
+                justify-content: center;
+            }
+            .nav-btn span:not(.material-symbols-outlined) {
+                display: none;
+            }
+            main {
+                padding: 1rem;
+            }
+            .topbar {
+                padding: 1rem;
+            }
+            .topbar-title h1 {
+                font-size: 1.3rem;
+            }
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app-shell">
+
+        <aside class="sidebar">
+            <div class="sidebar-flag">
+                <div class="sf-white"></div>
+                <div class="sf-red"></div>
+                <div class="sf-green"></div>
+            </div>
+
+            <div class="sidebar-inner">
+                <div class="sidebar-logo">
+                    <img src="assets/logo.png" alt="Logo Repoblikan'i Madagasikara" style="width:100%; max-width:220px; display:block; margin:0 auto;">
+                </div>
+
+                <nav class="sidebar-nav">
+                    <button class="nav-btn active" data-tab="search">
+                    <span class="material-symbols-outlined">search</span>
+                    <span>Recherche</span>
+                </button>
+                    <button class="nav-btn" data-tab="dashboard">
+                    <span class="material-symbols-outlined">bar_chart</span>
+                    <span>Dashboard</span>
+                </button>
+                    <button class="nav-btn" data-tab="deputies">
+                    <span class="material-symbols-outlined">groups</span>
+                    <span>Députés</span>
+                </button>
+                    <button class="nav-btn" data-tab="seances">
+                    <span class="material-symbols-outlined">event_note</span>
+                    <span>Séances</span>
+                </button>
+                    <button class="nav-btn" data-tab="laws">
+                    <span class="material-symbols-outlined">gavel</span>
+                    <span>Textes Législatifs</span>
+                </button>
+                </nav>
+            </div>
+        </aside>
+
+        <div class="content-area">
+
+            <header class="topbar">
+                <div class="topbar-title"></div>
+                <div class="topbar-right">
+                    <div class="topbar-brand">
+                        <h1><span>Memoire </span>Parlementaire</h1>
+                        <p class="subtitle">Le patrimoine des débats au service des citoyens</p>
+                    </div>
+                    <button class="theme-toggle" id="theme-toggle" title="Basculer le thème">
+                        <span class="material-symbols-outlined" id="theme-icon">dark_mode</span>
+                    </button>
+                </div>
+            </header>
+
+            <div class="flag">
+                <div class="flag-green"></div>
+                <div class="flag-red"></div>
+                <div class="flag-white"></div>
+            </div>
+
+            <main>
+                <div id="search-tab" class="tab-content active">
+                    <div class="search-hero">
+                        <div class="search-box">
+                            <span class="search-icon"><span class="material-symbols-outlined">search</span></span>
+                            <input type="text" id="search-input" placeholder="Rechercher dans les débats parlementaires...">
+                            <button id="search-btn">
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                        </div>
+                    </div>
+
+                    <div class="results-header">
+                        <div class="results-count"><span id="result-count">0</span> résultats</div>
+                        <div id="theme-filter-badge" style="display:none; align-items:center; gap:0.4rem; background:var(--primary-light,#e8f0fe); color:var(--primary,#1a73e8); padding:0.3rem 0.8rem; border-radius:999px; font-size:0.85rem; font-weight:500; cursor:pointer;" onclick="clearThemeFilter()"
+                            title="Supprimer le filtre thème">
+                            <span class="material-symbols-outlined" style="font-size:1rem">label</span>
+                            <span id="theme-filter-label"></span>
+                            <span class="material-symbols-outlined" style="font-size:1rem">close</span>
+                        </div>
+                    </div>
+                    <div id="results-list" class="results-list">
+                        <div class="no-results">
+                            <span class="material-symbols-outlined">search</span> Entrez un terme de recherche
+                        </div>
+                    </div>
+                    <div id="pagination" class="pagination"></div>
+                </div>
+
+                <div id="dashboard-tab" class="tab-content">
+                    <div class="dashboard-grid">
+                        <div class="stat-card" onclick="navigateTo('search')">
+                            <div class="stat-icon"><span class="material-symbols-outlined">forum</span></div>
+                            <div class="stat-info">
+                                <h3 id="total-debates">-</h3>
+                                <p>Débats</p>
+                            </div>
+                            <span class="material-symbols-outlined stat-arrow">arrow_forward</span>
+                        </div>
+                        <div class="stat-card" onclick="navigateTo('deputies')">
+                            <div class="stat-icon"><span class="material-symbols-outlined">groups</span></div>
+                            <div class="stat-info">
+                                <h3 id="total-deputies">-</h3>
+                                <p>Députés</p>
+                            </div>
+                            <span class="material-symbols-outlined stat-arrow">arrow_forward</span>
+                        </div>
+                        <div class="stat-card" onclick="navigateTo('seances')">
+                            <div class="stat-icon"><span class="material-symbols-outlined">calendar_month</span></div>
+                            <div class="stat-info">
+                                <h3 id="total-sessions">-</h3>
+                                <p>Séances</p>
+                            </div>
+                            <span class="material-symbols-outlined stat-arrow">arrow_forward</span>
+                        </div>
+                        <div class="stat-card" onclick="navigateTo('laws')">
+                            <div class="stat-icon"><span class="material-symbols-outlined">description</span></div>
+                            <div class="stat-info">
+                                <h3 id="total-laws">-</h3>
+                                <p>Textes législatifs</p>
+                            </div>
+                            <span class="material-symbols-outlined stat-arrow">arrow_forward</span>
+                        </div>
+                    </div>
+                    <div class="charts-grid">
+                        <div class="chart-card">
+                            <h3><span class="material-symbols-outlined">leaderboard</span> Députés les plus actifs</h3>
+                            <div id="active-deputies"></div>
+                        </div>
+                        <div class="chart-card">
+                            <h3><span class="material-symbols-outlined">donut_large</span> Débats par région</h3>
+                            <div id="region-stats"></div>
+                        </div>
+                        <div class="chart-card">
+                            <h3><span class="material-symbols-outlined">show_chart</span> Évolution des débats</h3>
+                            <div id="timeline-stats"></div>
+                        </div>
+                        <div class="chart-card">
+                            <h3><span class="material-symbols-outlined">label</span> Thèmes les plus discutés</h3>
+                            <div id="themes-stats"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="deputies-tab" class="tab-content">
+                    <div class="list-header">
+                        <div class="list-search">
+                            <input type="text" id="deputies-search" placeholder="Rechercher un député...">
+                            <select id="deputies-region"><option value="">Toutes les régions</option></select>
+                            <select id="deputies-party"><option value="">Tous les partis</option></select>
+                        </div>
+                    </div>
+                    <div id="deputies-list" class="deputies-grid"></div>
+                    <div id="deputies-pagination" class="pagination"></div>
+                </div>
+
+                <div id="seances-tab" class="tab-content">
+                    <div class="list-header">
+                        <div class="list-search">
+                            <input type="text" id="seances-search" placeholder="Rechercher une séance...">
+                            <select id="seances-type"><option value="">Tous les types</option></select>
+                        </div>
+                    </div>
+                    <div id="seances-list" class="seances-list"></div>
+                    <div id="seances-pagination" class="pagination"></div>
+                </div>
+
+                <div id="laws-tab" class="tab-content">
+                    <div class="list-header">
+                        <div class="list-search" style="align-items:center">
+                            <input type="text" id="laws-search" placeholder="Rechercher un texte...">
+                            <select id="laws-type"><option value="">Tous les types</option></select>
+                            <select id="laws-status"><option value="">Tous les statuts</option></select></div>
+                    </div>
+                    <div id="laws-list" class="laws-list"></div>
+                    <div id="laws-pagination" class="pagination"></div>
+                </div>
+
+                <div id="deputy-detail-tab" class="tab-content">
+                    <div id="deputy-detail-content"></div>
+                </div>
+
+                <div id="region-detail-tab" class="tab-content">
+                    <div id="region-detail-content"></div>
+                </div>
+
+                <div id="timeline-detail-tab" class="tab-content">
+                    <div id="timeline-detail-content"></div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const html = document.documentElement;
+        toggleBtn.addEventListener('click', () => {
+            const isDark = html.getAttribute('data-theme') === 'dark';
+            html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+            themeIcon.textContent = isDark ? 'dark_mode' : 'light_mode';
+        });
+    </script>
+
+    <script>
+        const API_URL = 'http://localhost:8000/api';
+
+        let currentPage = 1;
+        let currentQuery = '';
+        let currentThemeFilter = null;
+
+        function formatDate(dateString) {
+            if (!dateString) return '';
+            try {
+                const date = new Date(dateString);
+                return date.toLocaleDateString('fr-FR');
+            } catch {
+                return dateString;
+            }
+        }
+
+        function escapeHtml(text) {
+            if (!text) return '';
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        async function performSearch() {
+            const query = document.getElementById('search-input').value.trim();
+            if (!query || query.length < 1) return;
+
+            currentQuery = query;
+            currentThemeFilter = null;
+            currentPage = 1;
+            await loadSearchResults();
+        }
+
+        function clearThemeFilter() {
+            currentThemeFilter = null;
+            currentQuery = document.getElementById('search-input').value.trim() || '*';
+            currentPage = 1;
+            loadSearchResults();
+        }
+
+        async function loadSearchResults() {
+            const resultsDiv = document.getElementById('results-list');
+            resultsDiv.innerHTML = '<div class="loading"><span class="material-symbols-outlined">refresh</span> Chargement...</div>';
+
+            const badge = document.getElementById('theme-filter-badge');
+            const badgeLabel = document.getElementById('theme-filter-label');
+            if (currentThemeFilter) {
+                badgeLabel.textContent = currentThemeFilter;
+                badge.style.display = 'flex';
+            } else {
+                badge.style.display = 'none';
+            }
+
+            const queryParam = currentQuery === '*' ? '' : currentQuery;
+            let url = `${API_URL}/search/?q=${encodeURIComponent(queryParam || ' ')}&page=${currentPage}&size=20`;
+            if (currentThemeFilter) {
+                url += `&theme=${encodeURIComponent(currentThemeFilter)}`;
+            }
+
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+
+                document.getElementById('result-count').textContent = data.total || 0;
+
+                if (data.results && data.results.length > 0) {
+                    displayResults(data.results);
+                    displayPagination(data.page, data.total_pages);
+                } else {
+                    resultsDiv.innerHTML = '<div class="no-results"><span class="material-symbols-outlined">search_off</span><p>Aucun résultat trouvé</p></div>';
+                }
+            } catch (error) {
+                console.error(error);
+                resultsDiv.innerHTML = '<div class="no-results"><span class="material-symbols-outlined">error</span><p>Erreur de connexion au backend</p></div>';
+            }
+        }
+
+        function displayResults(results) {
+            const container = document.getElementById('results-list');
+
+            container.innerHTML = results.map(result => {
+                        const source = result.source;
+                        const highlights = result.highlights || {};
+                        let content = source.contenu_texte || '';
+                        if (highlights.contenu_texte) {
+                            content = highlights.contenu_texte.join('... ');
+                        } else if (content.length > 400) {
+                            content = content.substring(0, 400) + '...';
+                        }
+
+                        return `
+                    <div class="result-card">
+                        <div class="result-header">
+                            <div class="result-depute"><span class="material-symbols-outlined">account_circle</span> <strong>${escapeHtml(source.nom_depute || 'Anonyme')}</strong></div>
+                            <div class="result-meta">
+                                <span><span class="material-symbols-outlined">calendar_today</span> ${formatDate(source.date_seance)}</span>
+                                ${source.region ? `<span><span class="material-symbols-outlined">location_on</span> ${escapeHtml(source.region)}</span>` : ''}
+                            </div>
+                        </div>
+                        <div class="result-content">${content}</div>
+                        <div class="result-footer">
+                            ${source.parti ? `<span class="result-tag"><span class="material-symbols-outlined">account_balance</span> ${escapeHtml(source.parti)}</span>` : ''}
+                            ${source.theme_principal ? `<span class="result-tag${currentThemeFilter && source.theme_principal === currentThemeFilter ? ' result-tag--highlight' : ''}"><span class="material-symbols-outlined">label</span> ${escapeHtml(source.theme_principal)}</span>` : ''}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        function displayPagination(current, total) {
+            const container = document.getElementById('pagination');
+            if (total <= 1) { container.innerHTML = ''; return; }
+            
+            let html = `<button onclick="changePage(${current-1})" ${current===1?'disabled':''}><span class="material-symbols-outlined">chevron_left</span></button>`;
+            for (let i = 1; i <= Math.min(total, 5); i++) {
+                html += `<button onclick="changePage(${i})" class="${i===current?'active':''}">${i}</button>`;
+            }
+            if (total > 5) html += `<button disabled>...</button><button onclick="changePage(${total})">${total}</button>`;
+            html += `<button onclick="changePage(${current+1})" ${current===total?'disabled':''}><span class="material-symbols-outlined">chevron_right</span></button>`;
+            container.innerHTML = html;
+        }
+        
+        function changePage(page) {
+            currentPage = page;
+            loadSearchResults();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        async function loadDashboard() {
+            try {
+                const response = await fetch(`${API_URL}/stats/dashboard`);
+                const data = await response.json();
+                
+                document.getElementById('total-debates').textContent = data.total_debates || 0;
+                document.getElementById('total-deputies').textContent = data.total_deputies || 0;
+                document.getElementById('total-sessions').textContent = data.total_sessions || 0;
+                document.getElementById('total-laws').textContent = data.total_laws || 0;
+                
+                if (data.most_active_deputies && data.most_active_deputies.length > 0) {
+                    document.getElementById('active-deputies').innerHTML = data.most_active_deputies.slice(0,5).map(d => 
+                        `<div class="dash-item" onclick="openDeputyDetail('${escapeHtml(d.name).replace(/'/g, "\\'")}')">
+                            <span class="material-symbols-outlined" style="font-size:16px;color:var(--green);font-variation-settings:'FILL' 1">account_circle</span>
+                            <span><strong>${escapeHtml(d.name)}</strong></span>
+                            <span style="margin-left:auto;color:var(--text-muted);font-size:0.8rem">${d.count} interventions</span>
+                            <span class="material-symbols-outlined dash-arrow">arrow_forward</span>
+                        </div>`
+                    ).join('');
+                }
+                
+                if (data.debates_by_region && data.debates_by_region.length > 0) {
+                    document.getElementById('region-stats').innerHTML = data.debates_by_region.slice(0,5).map(r =>
+                        `<div class="dash-item" onclick="openRegionDetail('${escapeHtml(r.region).replace(/'/g,"\\'")}', ${r.count})">
+                            <span class="material-symbols-outlined" style="font-size:16px;color:var(--green);font-variation-settings:'FILL' 1">location_on</span>
+                            <span>${escapeHtml(r.region)}</span>
+                            <span style="margin-left:auto;color:var(--text-muted);font-size:0.8rem">${r.count} débats</span>
+                            <span class="material-symbols-outlined dash-arrow">arrow_forward</span>
+                        </div>`
+                    ).join('');
+                }
+                
+                if (data.timeline && data.timeline.length > 0) {
+                    const today = new Date();
+                    const todayStr = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}`;
+                    const filtered = data.timeline.filter(t => t.date <= todayStr);
+                    const displayed = filtered.slice(-12); // 12 derniers mois réels
+
+                    document.getElementById('timeline-stats').innerHTML = displayed.length > 0
+                        ? displayed.map(t =>
+                            `<div class="dash-item" onclick="openTimelineDetail('${t.date}', ${t.count})">
+                                <span class="material-symbols-outlined" style="font-size:16px;color:var(--green);font-variation-settings:'FILL' 1">event</span>
+                                <span>${t.date}</span>
+                                <span style="margin-left:auto;color:var(--text-muted);font-size:0.8rem">${t.count} débats</span>
+                                <span class="material-symbols-outlined dash-arrow">arrow_forward</span>
+                            </div>`
+                          ).join('')
+                        : '<div style="color:var(--text-muted);font-size:0.85rem;padding:0.5rem">Aucune donnée disponible</div>';
+                }
+                
+                if (data.most_discussed_themes && data.most_discussed_themes.length > 0) {
+                    document.getElementById('themes-stats').innerHTML = data.most_discussed_themes.slice(0,5).map(t =>
+                        `<div class="dash-item" onclick="navigateTo('search', {theme:'${escapeHtml(t.theme)}'})">
+                            <span class="material-symbols-outlined" style="font-size:16px;color:var(--red);font-variation-settings:'FILL' 1">label</span>
+                            <span>${escapeHtml(t.theme)}</span>
+                            <span style="margin-left:auto;color:var(--text-muted);font-size:0.8rem">${t.count}</span>
+                            <span class="material-symbols-outlined dash-arrow">arrow_forward</span>
+                        </div>`
+                    ).join('');
+                }
+            } catch (error) {
+                console.error('Dashboard error:', error);
+            }
+        }
+        
+        async function populateDeputyFilters() {
+            try {
+                const res  = await fetch(`${API_URL}/deputies/stats/overview`);
+                const data = await res.json();
+
+                const regionSelect = document.getElementById('deputies-region');
+                const partySelect  = document.getElementById('deputies-party');
+
+                const selectedRegion = regionSelect.value;
+                const selectedParty  = partySelect.value;
+
+                regionSelect.innerHTML = '<option value="">Toutes les régions</option>';
+                (data.by_region || [])
+                    .sort((a, b) => a.region.localeCompare(b.region))
+                    .forEach(r => {
+                        const opt = document.createElement('option');
+                        opt.value = r.region;
+                        opt.textContent = `${r.region} (${r.count})`;
+                        if (r.region === selectedRegion) opt.selected = true;
+                        regionSelect.appendChild(opt);
+                    });
+
+                partySelect.innerHTML = '<option value="">Tous les partis</option>';
+                (data.by_party || [])
+                    .sort((a, b) => a.party.localeCompare(b.party))
+                    .forEach(p => {
+                        const opt = document.createElement('option');
+                        opt.value = p.party;
+                        opt.textContent = `${p.party} (${p.count})`;
+                        if (p.party === selectedParty) opt.selected = true;
+                        partySelect.appendChild(opt);
+                    });
+            } catch (err) {
+                console.error('Erreur chargement filtres députés:', err);
+            }
+        }
+
+        async function loadDeputies() {
+            const container = document.getElementById('deputies-list');
+            container.innerHTML = '<div class="loading"><span class="material-symbols-outlined">refresh</span> Chargement...</div>';
+            
+            const search = document.getElementById('deputies-search')?.value.trim() || '';
+            const region = document.getElementById('deputies-region')?.value || '';
+            const parti  = document.getElementById('deputies-party')?.value || '';
+
+            let url = `${API_URL}/deputies/?size=200`;
+            if (search) url += `&search=${encodeURIComponent(search)}`;
+            if (region) url += `&region=${encodeURIComponent(region)}`;
+            if (parti)  url += `&parti=${encodeURIComponent(parti)}`;
+
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                
+                if (data.deputies && data.deputies.length > 0) {
+                    container.innerHTML = data.deputies.map(d => {
+                        const initials = (d.prenom?.charAt(0) || '') + (d.nom?.charAt(0) || '');
+                        const avatarContent = d.photo_url
+                            ? `<img src="${escapeHtml(d.photo_url)}" alt="${escapeHtml(d.prenom || '')} ${escapeHtml(d.nom || '')}" onerror="this.parentElement.innerHTML='${initials.toUpperCase()}'">`
+                            : initials.toUpperCase();
+                        return `
+                        <div class="deputy-card" onclick="openDeputyByCard('${escapeHtml((d.prenom + ' ' + d.nom).trim()).replace(/'/g, "\\'")}')">
+                            <div class="deputy-avatar">${avatarContent}</div>
+                            <div class="deputy-info">
+                                <h4>${escapeHtml(d.prenom || '')} ${escapeHtml(d.nom || '')}</h4>
+                                <p><span class="material-symbols-outlined">location_on</span> ${escapeHtml(d.region || 'Région inconnue')}</p>
+                                <p><span class="material-symbols-outlined">account_balance</span> ${escapeHtml(d.parti_politique || 'Indépendant')}</p>
+                            </div>
+                        </div>
+                    `}).join('');
+                } else {
+                    container.innerHTML = '<div class="no-results">Aucun député trouvé</div>';
+                }
+            } catch (error) {
+                container.innerHTML = '<div class="no-results">Erreur de chargement</div>';
+            }
+        }
+        
+        async function populateSeanceTypes() {
+            try {
+                const res  = await fetch(`${API_URL}/seances/stats/types`);
+                if (!res.ok) return;
+                const data = await res.json();
+
+                const select = document.getElementById('seances-type');
+                const selectedVal = select.value;
+
+                select.innerHTML = '<option value="">Tous les types</option>';
+                (data.types || [])
+                    .sort((a, b) => a.type.localeCompare(b.type))
+                    .forEach(t => {
+                        const opt = document.createElement('option');
+                        opt.value = t.type;
+                        opt.textContent = `${t.type} (${t.count})`;
+                        if (t.type === selectedVal) opt.selected = true;
+                        select.appendChild(opt);
+                    });
+            } catch (err) {}
+        }
+
+        async function loadSeances() {
+            const container = document.getElementById('seances-list');
+            container.innerHTML = '<div class="loading"><span class="material-symbols-outlined">refresh</span> Chargement...</div>';
+
+            const search     = document.getElementById('seances-search')?.value.trim() || '';
+            const typeSeance = document.getElementById('seances-type')?.value || '';
+
+            let url = `${API_URL}/seances/?size=50`;
+            if (search)     url += `&search=${encodeURIComponent(search)}`;
+            if (typeSeance) url += `&type_seance=${encodeURIComponent(typeSeance)}`;
+
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                
+                if (data.seances && data.seances.length > 0) {
+                    container.innerHTML = data.seances.map(s => `
+                        <div class="seance-card">
+                            <div><strong>${escapeHtml(s.titre || 'Séance sans titre')}</strong></div>
+                            <div class="result-meta" style="margin-top:8px">
+                                <span><span class="material-symbols-outlined">calendar_today</span> ${formatDate(s.date)}</span>
+                                <span><span class="material-symbols-outlined">schedule</span> ${s.heure || ''}</span>
+                                <span><span class="material-symbols-outlined">push_pin</span> ${s.type_seance || ''}</span>
+                            </div>
+                        </div>
+                    `).join('');
+                } else {
+                    container.innerHTML = '<div class="no-results">Aucune séance trouvée</div>';
+                }
+            } catch (error) {
+                container.innerHTML = '<div class="no-results">Erreur de chargement</div>';
+            }
+        }
+
+        async function populateLawFilters() {
+            try {
+                const res  = await fetch(`${API_URL}/legislatives/stats/filters`);
+                if (!res.ok) return;
+                const data = await res.json();
+
+                const typeSelect   = document.getElementById('laws-type');
+                const statusSelect = document.getElementById('laws-status');
+                const selectedType   = typeSelect.value;
+                const selectedStatus = statusSelect.value;
+
+                typeSelect.innerHTML = '<option value="">Tous les types</option>';
+                (data.types || [])
+                    .sort((a, b) => a.type.localeCompare(b.type))
+                    .forEach(t => {
+                        const opt = document.createElement('option');
+                        opt.value = t.type;
+                        opt.textContent = `${t.type} (${t.count})`;
+                        if (t.type === selectedType) opt.selected = true;
+                        typeSelect.appendChild(opt);
+                    });
+
+                statusSelect.innerHTML = '<option value="">Tous les statuts</option>';
+                (data.statuses || [])
+                    .sort((a, b) => a.status.localeCompare(b.status))
+                    .forEach(s => {
+                        const opt = document.createElement('option');
+                        opt.value = s.status;
+                        opt.textContent = `${s.status} (${s.count})`;
+                        if (s.status === selectedStatus) opt.selected = true;
+                        statusSelect.appendChild(opt);
+                    });
+            } catch (err) {}
+        }
+
+        async function loadLaws() {
+            const container = document.getElementById('laws-list');
+            container.innerHTML = '<div class="loading"><span class="material-symbols-outlined">refresh</span> Chargement...</div>';
+
+            const search   = document.getElementById('laws-search')?.value.trim() || '';
+            const type     = document.getElementById('laws-type')?.value || '';
+            const status   = document.getElementById('laws-status')?.value || '';
+
+            let url = `${API_URL}/legislatives/?size=50`;
+            if (search) url += `&search=${encodeURIComponent(search)}`;
+            if (type)   url += `&type_texte=${encodeURIComponent(type)}`;
+            if (status) url += `&status=${encodeURIComponent(status)}`;
+
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                
+                if (data.texts && data.texts.length > 0) {
+                    container.innerHTML = data.texts.map(t => {
+                        const statusClass = t.status === 'ADOPTION_SEANCE' ? 'status-adoption'
+                            : t.status === 'EXAMEN_COMMISSION' ? 'status-examen' : 'status-depot';
+                        return `
+                        <div class="law-card">                            <div>
+                                <span class="law-number">${escapeHtml(t.numero || '')}</span> — <strong>${escapeHtml((t.intitule || '').substring(0, 100))}</strong>
+                            </div>
+                            <div class="result-meta" style="margin-top:8px">
+                                <span><span class="material-symbols-outlined">description</span> ${escapeHtml(t.type_texte || '')}</span>
+                                <span><span class="material-symbols-outlined">source</span> ${escapeHtml(t.origine || '')}</span>
+                                <span class="law-status ${statusClass}">${escapeHtml(t.status || '')}</span>
+                            </div>
+                        </div>`;
+                    }).join('');
+                } else {
+                    container.innerHTML = '<div class="no-results">Aucun texte trouvé</div>';
+                }
+            } catch (error) {
+                container.innerHTML = '<div class="no-results">Erreur de chargement</div>';
+            }
+        }
+        
+        function initNavigation() {
+            const navBtns = document.querySelectorAll('.nav-btn');
+            const tabs = document.querySelectorAll('.tab-content');
+            
+            navBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const tabId = btn.dataset.tab;
+                    navBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    tabs.forEach(tab => tab.classList.remove('active'));
+                    document.getElementById(`${tabId}-tab`).classList.add('active');
+                    
+                    if (tabId === 'dashboard') loadDashboard();
+                    else if (tabId === 'deputies') { populateDeputyFilters(); loadDeputies(); }
+                    else if (tabId === 'seances') { populateSeanceTypes(); loadSeances(); }
+                    else if (tabId === 'laws') { populateLawFilters(); loadLaws(); }
+                });
+            });
+        }
+        
+        let detailCurrentPage = 1;
+        let detailCurrentName = '';
+
+        function openDeputyByCard(nomComplet) {
+            openDeputyDetail(nomComplet);
+        }
+
+        async function openDeputyDetail(nomDepute) {
+            detailCurrentName = nomDepute;
+            detailCurrentPage = 1;
+
+            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            document.getElementById('deputy-detail-tab').classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            await loadDeputyInterventions();
+        }
+
+        async function loadDeputyInterventions() {
+            const container = document.getElementById('deputy-detail-content');
+            container.innerHTML = '<div class="loading"><span class="material-symbols-outlined">refresh</span> Chargement des interventions...</div>';
+
+            try {
+                const url = `${API_URL}/deputies/interventions/by-name?nom=${encodeURIComponent(detailCurrentName)}&page=${detailCurrentPage}&size=20`;
+                const res  = await fetch(url);
+                const data = await res.json();
+
+                const parts    = detailCurrentName.trim().split(' ');
+                const initials = parts.length >= 2
+                    ? parts[0].charAt(0) + parts[parts.length - 1].charAt(0)
+                    : detailCurrentName.charAt(0);
+
+                const first   = data.interventions?.[0] || {};
+                const region  = first.region  || '';
+                const parti   = first.parti   || '';
+
+                let photoUrl = '';
+                try {
+                    const depRes  = await fetch(`${API_URL}/deputies/?search=${encodeURIComponent(detailCurrentName)}&size=5`);
+                    const depData = await depRes.json();
+
+                    if (depData.deputies && depData.deputies.length > 0) {
+                        const nameLower = detailCurrentName.toLowerCase();
+                        const match = depData.deputies.find(d => {
+                            const full = `${d.nom || ''} ${d.prenom || ''}`.toLowerCase();
+                            const full2 = `${d.prenom || ''} ${d.nom || ''}`.toLowerCase();
+                            return full.includes(nameLower.split(' ')[0]?.toLowerCase() || '')
+                                || full2.includes(nameLower.split(' ')[0]?.toLowerCase() || '');
+                        }) || depData.deputies[0];
+                        photoUrl = match?.photo_url || '';
+                    }
+                } catch(e) {}
+
+                const avatarContent = photoUrl
+                    ? `<img src="${escapeHtml(photoUrl)}" alt="${escapeHtml(detailCurrentName)}" onerror="this.parentElement.innerHTML='${escapeHtml(initials.toUpperCase())}'" style="width:100%;height:100%;object-fit:cover;border-radius:50%">`
+                    : escapeHtml(initials.toUpperCase());
+
+                let html = `
+                    <div class="deputy-detail-header">
+                        <div class="deputy-detail-avatar">${avatarContent}</div>
+                        <div class="deputy-detail-info">
+                            <h2>${escapeHtml(detailCurrentName)}</h2>
+                            <div class="deputy-detail-meta">
+                                ${region ? `<span class="deputy-detail-badge"><span class="material-symbols-outlined">location_on</span>${escapeHtml(region)}</span>` : ''}
+                                ${parti  ? `<span class="deputy-detail-badge"><span class="material-symbols-outlined">account_balance</span>${escapeHtml(parti)}</span>`  : ''}
+                                <span class="deputy-detail-count"><span class="material-symbols-outlined" style="font-size:14px">forum</span>${data.total} intervention${data.total > 1 ? 's' : ''}</span>
+                            </div>
+                        </div>
+                        <button class="deputy-detail-back" onclick="navigateTo('dashboard')">
+                            <span class="material-symbols-outlined">arrow_back</span> Retour
+                        </button>
+                    </div>`;
+
+                if (data.interventions && data.interventions.length > 0) {
+                    data.interventions.forEach(inv => {
+                        const contenu = inv.contenu_texte
+                            ? (inv.contenu_texte.length > 500 ? inv.contenu_texte.substring(0, 500) + '…' : inv.contenu_texte)
+                            : '';
+                        html += `
+                            <div class="intervention-card">
+                                <div class="intervention-header">
+                                    <div style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap">
+                                        ${inv.objet_debat ? `<strong style="font-size:0.95rem">${escapeHtml(inv.objet_debat)}</strong>` : ''}
+                                        ${inv.type_intervention ? `<span class="intervention-type">${escapeHtml(inv.type_intervention)}</span>` : ''}
+                                    </div>
+                                    <span class="intervention-date">
+                                        <span class="material-symbols-outlined">calendar_today</span>
+                                        ${formatDate(inv.date_seance)}
+                                    </span>
+                                </div>
+                                ${contenu ? `<div class="intervention-content">${escapeHtml(contenu)}</div>` : ''}
+                                <div class="intervention-footer">
+                                    ${inv.theme_principal ? `<span class="intervention-tag"><span class="material-symbols-outlined">label</span>${escapeHtml(inv.theme_principal)}</span>` : ''}
+                                    ${inv.id_seance     ? `<span class="intervention-tag"><span class="material-symbols-outlined">event_note</span>Séance ${escapeHtml(inv.id_seance)}</span>` : ''}
+                                    ${inv.style         ? `<span class="intervention-tag"><span class="material-symbols-outlined">record_voice_over</span>${escapeHtml(inv.style)}</span>`   : ''}
+                                </div>
+                            </div>`;
+                    });
+
+                    html += buildDetailPagination(detailCurrentPage, data.total_pages);
+                } else {
+                    html += '<div class="no-results"><span class="material-symbols-outlined">search_off</span><p>Aucune intervention trouvée</p></div>';
+                }
+
+                container.innerHTML = html;
+            } catch (err) {
+                container.innerHTML = '<div class="no-results"><span class="material-symbols-outlined">error</span><p>Erreur de chargement</p></div>';
+                console.error(err);
+            }
+        }
+
+        function buildSmartPagination(current, total, callbackFn) {
+            let html = '<div class="pagination" style="margin-top:1.5rem">';
+
+            html += `<button onclick="${callbackFn}(${current - 1})" ${current === 1 ? 'disabled' : ''}>
+                        <span class="material-symbols-outlined">chevron_left</span>
+                     </button>`;
+
+            const pages = [];
+
+            if (total <= 7) {
+                for (let i = 1; i <= total; i++) pages.push(i);
+            } else {
+                pages.push(1);
+
+                if (current > 3) pages.push('...');
+
+                const start = Math.max(2, current - 2);
+                const end   = Math.min(total - 1, current + 2);
+                for (let i = start; i <= end; i++) pages.push(i);
+
+                if (current < total - 2) pages.push('...');
+
+                pages.push(total);
+            }
+
+            pages.forEach(p => {
+                if (p === '...') {
+                    html += `<button disabled style="cursor:default;border:none;background:transparent;color:var(--text-muted)">…</button>`;
+                } else {
+                    html += `<button onclick="${callbackFn}(${p})" class="${p === current ? 'active' : ''}">${p}</button>`;
+                }
+            });
+
+            html += `<button onclick="${callbackFn}(${current + 1})" ${current === total ? 'disabled' : ''}>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                     </button>`;
+
+            html += '</div>';
+            return html;
+        }
+
+        function buildDetailPagination(current, total) {
+            if (!total || total <= 1) return '';
+            return buildSmartPagination(current, total, 'changeDetailPage');
+        }
+
+        function changeDetailPage(page) {
+            detailCurrentPage = page;
+            loadDeputyInterventions();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        let regionCurrentPage  = 1;
+        let regionCurrentName  = '';
+        let regionTotalDebates = 0;
+
+        async function openRegionDetail(region, total) {
+            regionCurrentName  = region;
+            regionCurrentPage  = 1;
+            regionTotalDebates = total;
+
+            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            document.getElementById('region-detail-tab').classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            await loadRegionDebates();
+        }
+
+        async function loadRegionDebates() {
+            const container = document.getElementById('region-detail-content');
+            container.innerHTML = '<div class="loading"><span class="material-symbols-outlined">refresh</span> Chargement des débats...</div>';
+
+            try {
+                const size = 20;
+                const url = `${API_URL}/search/advanced?region=${encodeURIComponent(regionCurrentName)}&page=${regionCurrentPage}&size=${size}`;
+                const res  = await fetch(url);
+                const data = await res.json();
+
+                const total      = data.total || 0;
+                const totalPages = data.total_pages
+                    ? data.total_pages
+                    : (total > 0 ? Math.ceil(total / size) : 1);
+
+                let html = `
+                    <div class="deputy-detail-header">
+                        <div class="deputy-detail-avatar" style="background:linear-gradient(135deg,var(--red),#c0392b)">
+                            <span class="material-symbols-outlined" style="font-size:2rem;color:white;font-variation-settings:'FILL' 1">location_on</span>
+                        </div>
+                        <div class="deputy-detail-info">
+                            <h2>${escapeHtml(regionCurrentName)}</h2>
+                            <div class="deputy-detail-meta">
+                                <span class="deputy-detail-count">
+                                    <span class="material-symbols-outlined" style="font-size:14px">forum</span>
+                                    ${total} débat${total > 1 ? 's' : ''}
+                                </span>
+                                <span class="deputy-detail-badge" style="font-size:0.75rem;color:var(--text-muted)">
+                                    Page ${regionCurrentPage} / ${totalPages}
+                                </span>
+                            </div>
+                        </div>
+                        <button class="deputy-detail-back" onclick="navigateTo('dashboard')">
+                            <span class="material-symbols-outlined">arrow_back</span> Retour
+                        </button>
+                    </div>`;
+
+                if (data.results && data.results.length > 0) {
+                    data.results.forEach(result => {
+                        const src = result.source;
+                        let contenu = src.contenu_texte || '';
+                        if (contenu.length > 400) contenu = contenu.substring(0, 400) + '…';
+
+                        html += `
+                            <div class="intervention-card">
+                                <div class="intervention-header">
+                                    <div style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap">
+                                        <span class="material-symbols-outlined" style="color:var(--green);font-size:18px;font-variation-settings:'FILL' 1">account_circle</span>
+                                        <strong>${escapeHtml(src.nom_depute || 'Anonyme')}</strong>
+                                        ${src.type_intervention ? `<span class="intervention-type">${escapeHtml(src.type_intervention)}</span>` : ''}
+                                    </div>
+                                    <span class="intervention-date">
+                                        <span class="material-symbols-outlined">calendar_today</span>
+                                        ${formatDate(src.date_seance)}
+                                    </span>
+                                </div>
+                                ${src.objet_debat ? `<div style="font-weight:600;font-size:0.9rem;margin:0.5rem 0">${escapeHtml(src.objet_debat)}</div>` : ''}
+                                ${contenu ? `<div class="intervention-content">${escapeHtml(contenu)}</div>` : ''}
+                                <div class="intervention-footer">
+                                    ${src.parti ? `<span class="intervention-tag"><span class="material-symbols-outlined">account_balance</span>${escapeHtml(src.parti)}</span>` : ''}
+                                    ${src.theme_principal ? `<span class="intervention-tag"><span class="material-symbols-outlined">label</span>${escapeHtml(src.theme_principal)}</span>` : ''}
+                                    ${src.id_seance ? `<span class="intervention-tag"><span class="material-symbols-outlined">event_note</span>Séance ${escapeHtml(src.id_seance)}</span>` : ''}
+                                </div>
+                            </div>`;
+                    });
+
+                    html += buildRegionPagination(regionCurrentPage, totalPages);
+                } else {
+                    html += '<div class="no-results"><span class="material-symbols-outlined">search_off</span><p>Aucun débat trouvé</p></div>';
+                }
+
+                container.innerHTML = html;
+            } catch (err) {
+                container.innerHTML = '<div class="no-results"><span class="material-symbols-outlined">error</span><p>Erreur de chargement</p></div>';
+                console.error(err);
+            }
+        }
+
+        function buildRegionPagination(current, total) {
+            if (!total || total <= 1) return '';
+            return buildSmartPagination(current, total, 'changeRegionPage');
+        }
+
+        function changeRegionPage(page) {
+            regionCurrentPage = page;
+            loadRegionDebates();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        let timelineCurrentPage  = 1;
+        let timelineCurrentMonth = '';
+        let timelineTotalDebates = 0;
+
+        async function openTimelineDetail(yearMonth, total) {
+            timelineCurrentMonth = yearMonth;
+            timelineCurrentPage  = 1;
+            timelineTotalDebates = total;
+
+            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            document.getElementById('timeline-detail-tab').classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            await loadTimelineDebates();
+        }
+
+        async function loadTimelineDebates() {
+            const container = document.getElementById('timeline-detail-content');
+            container.innerHTML = '<div class="loading"><span class="material-symbols-outlined">refresh</span> Chargement des débats...</div>';
+
+            try {
+                const [year, month] = timelineCurrentMonth.split('-');
+                const dateFrom = `${year}-${month}-01`;
+                const lastDay  = new Date(parseInt(year), parseInt(month), 0).getDate();
+                const dateTo   = `${year}-${month}-${String(lastDay).padStart(2, '0')}`;
+
+                const size = 20;
+                const url  = `${API_URL}/search/advanced?date_from=${dateFrom}&date_to=${dateTo}&page=${timelineCurrentPage}&size=${size}`;
+                const res  = await fetch(url);
+                const data = await res.json();
+
+                const total      = data.total || 0;
+                const totalPages = data.total_pages
+                    ? data.total_pages
+                    : (total > 0 ? Math.ceil(total / size) : 1);
+
+                const monthNames = ['Janvier','Février','Mars','Avril','Mai','Juin',
+                                    'Juillet','Août','Septembre','Octobre','Novembre','Décembre'];
+                const monthLabel = `${monthNames[parseInt(month) - 1]} ${year}`;
+
+                let html = `
+                    <div class="deputy-detail-header">
+                        <div class="deputy-detail-avatar" style="background:linear-gradient(135deg,#7c3aed,#5b21b6)">
+                            <span class="material-symbols-outlined" style="font-size:2rem;color:white;font-variation-settings:'FILL' 1">calendar_month</span>
+                        </div>
+                        <div class="deputy-detail-info">
+                            <h2>${escapeHtml(monthLabel)}</h2>
+                            <div class="deputy-detail-meta">
+                                <span class="deputy-detail-count">
+                                    <span class="material-symbols-outlined" style="font-size:14px">forum</span>
+                                    ${total} débat${total > 1 ? 's' : ''}
+                                </span>
+                                <span class="deputy-detail-badge" style="font-size:0.75rem;color:var(--text-muted)">
+                                    Page ${timelineCurrentPage} / ${totalPages}
+                                </span>
+                            </div>
+                        </div>
+                        <button class="deputy-detail-back" onclick="navigateTo('dashboard')">
+                            <span class="material-symbols-outlined">arrow_back</span> Retour
+                        </button>
+                    </div>`;
+
+                if (data.results && data.results.length > 0) {
+                    data.results.forEach(result => {
+                        const src = result.source;
+                        let contenu = src.contenu_texte || '';
+                        if (contenu.length > 400) contenu = contenu.substring(0, 400) + '…';
+
+                        html += `
+                            <div class="intervention-card">
+                                <div class="intervention-header">
+                                    <div style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap">
+                                        <span class="material-symbols-outlined" style="color:var(--green);font-size:18px;font-variation-settings:'FILL' 1">account_circle</span>
+                                        <strong>${escapeHtml(src.nom_depute || 'Anonyme')}</strong>
+                                        ${src.type_intervention ? `<span class="intervention-type">${escapeHtml(src.type_intervention)}</span>` : ''}
+                                    </div>
+                                    <span class="intervention-date">
+                                        <span class="material-symbols-outlined">calendar_today</span>
+                                        ${formatDate(src.date_seance)}
+                                    </span>
+                                </div>
+                                ${src.objet_debat ? `<div style="font-weight:600;font-size:0.9rem;margin:0.5rem 0">${escapeHtml(src.objet_debat)}</div>` : ''}
+                                ${contenu ? `<div class="intervention-content">${escapeHtml(contenu)}</div>` : ''}
+                                <div class="intervention-footer">
+                                    ${src.region ? `<span class="intervention-tag"><span class="material-symbols-outlined">location_on</span>${escapeHtml(src.region)}</span>` : ''}
+                                    ${src.parti  ? `<span class="intervention-tag"><span class="material-symbols-outlined">account_balance</span>${escapeHtml(src.parti)}</span>` : ''}
+                                    ${src.theme_principal ? `<span class="intervention-tag"><span class="material-symbols-outlined">label</span>${escapeHtml(src.theme_principal)}</span>` : ''}
+                                    ${src.id_seance ? `<span class="intervention-tag"><span class="material-symbols-outlined">event_note</span>Séance ${escapeHtml(src.id_seance)}</span>` : ''}
+                                </div>
+                            </div>`;
+                    });
+
+                    html += buildSmartPagination(timelineCurrentPage, totalPages, 'changeTimelinePage');
+                } else {
+                    html += '<div class="no-results"><span class="material-symbols-outlined">search_off</span><p>Aucun débat trouvé pour cette période</p></div>';
+                }
+
+                container.innerHTML = html;
+            } catch (err) {
+                container.innerHTML = '<div class="no-results"><span class="material-symbols-outlined">error</span><p>Erreur de chargement</p></div>';
+                console.error(err);
+            }
+        }
+
+        function changeTimelinePage(page) {
+            timelineCurrentPage = page;
+            loadTimelineDebates();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        async function navigateTo(tabId, filters = {}) {
+            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+            document.querySelector(`.nav-btn[data-tab="${tabId}"]`).classList.add('active');
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            document.getElementById(`${tabId}-tab`).classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            if (tabId === 'deputies') {
+                if (filters.search) {
+                    document.getElementById('deputies-search').value = filters.search;
+                }
+                populateDeputyFilters();
+                loadDeputies();
+
+            } else if (tabId === 'search') {
+                if (filters.theme) {
+                    document.getElementById('search-input').value = filters.theme;
+                    currentQuery = ' ';
+                    currentThemeFilter = filters.theme;
+                    currentPage = 1;
+                    loadSearchResults();
+                } else {
+                    currentQuery = '*';
+                    currentThemeFilter = null;
+                    currentPage = 1;
+                    loadSearchResults();
+                }
+
+            } else if (tabId === 'seances') {
+                populateSeanceTypes();
+                loadSeances();
+            } else if (tabId === 'laws') {
+                populateLawFilters();
+                loadLaws();
+            } else if (tabId === 'dashboard') {
+                loadDashboard();
+            }
+        }
+
+        function openAddLawModal() {
+            document.getElementById('modal-add-law').style.display = 'flex';
+        }
+
+        function closeAddLawModal() {
+            document.getElementById('modal-add-law').style.display = 'none';
+            document.getElementById('law-form-error').style.display = 'none';
+        }
+
+        async function submitAddLaw() {
+            const numero = document.getElementById('law-numero').value.trim();
+            const intitule = document.getElementById('law-intitule').value.trim();
+            const typeTexte = document.getElementById('law-type-input').value;
+            const origine = document.getElementById('law-origine').value.trim();
+            const status = document.getElementById('law-status-input').value;
+            const dateDepot = document.getElementById('law-date').value;
+            const auteur = document.getElementById('law-auteur').value.trim();
+            const resume = document.getElementById('law-resume').value.trim();
+
+            if (!numero || !intitule) {
+                const errorDiv = document.getElementById('law-form-error');
+                errorDiv.textContent = 'Veuillez remplir le numéro et l\'intitulé du texte.';
+                errorDiv.style.display = 'block';
+                return;
+            }
+
+            const lawData = {
+                numero: numero,
+                intitule: intitule,
+                type_texte: typeTexte || null,
+                origine: origine || null,
+                status: status || null,
+                date_depot: dateDepot || null,
+                auteur: auteur || null,
+                resume: resume || null
+            };
+
+            try {
+                const response = await fetch(`${API_URL}/legislatives/`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(lawData)
+                });
+
+                if (response.ok) {
+                    closeAddLawModal();
+                    loadLaws();
+                } else {
+                    const error = await response.json();
+                    const errorDiv = document.getElementById('law-form-error');
+                    errorDiv.textContent = error.detail || 'Erreur lors de l\'ajout';
+                    errorDiv.style.display = 'block';
+                }
+            } catch (err) {
+                console.error(err);
+                const errorDiv = document.getElementById('law-form-error');
+                errorDiv.textContent = 'Erreur de connexion au serveur';
+                errorDiv.style.display = 'block';
+            }
+        }
+
+        let currentDeleteLawId = null;
+
+        function openDeleteLawModal(lawId, lawLabel) {
+            currentDeleteLawId = lawId;
+            document.getElementById('delete-law-label').textContent = lawLabel;
+            document.getElementById('modal-delete-law').style.display = 'flex';
+        }
+
+        function closeDeleteLawModal() {
+            document.getElementById('modal-delete-law').style.display = 'none';
+            currentDeleteLawId = null;
+        }
+
+        async function confirmDeleteLaw() {
+            if (!currentDeleteLawId) return;
+
+            try {
+                const response = await fetch(`${API_URL}/legislatives/${encodeURIComponent(currentDeleteLawId)}`, {
+                    method: 'DELETE'
+                });
+
+                if (response.ok) {
+                    closeDeleteLawModal();
+                    loadLaws();
+                } else {
+                    alert('Erreur lors de la suppression');
+                }
+            } catch (err) {
+                console.error(err);
+                alert('Erreur de connexion');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initNavigation();
+            loadDashboard();
+            
+            document.getElementById('search-btn').addEventListener('click', performSearch);
+            document.getElementById('search-input').addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') performSearch();
+            });
+            let searchTimer;
+            document.getElementById('search-input').addEventListener('input', () => {
+                clearTimeout(searchTimer);
+                const val = document.getElementById('search-input').value.trim();
+                if (val.length >= 1) {
+                    searchTimer = setTimeout(performSearch, 300);
+                }
+            });
+            
+            let deputiesTimer;
+            document.getElementById('deputies-search').addEventListener('input', () => {
+                clearTimeout(deputiesTimer);
+                deputiesTimer = setTimeout(loadDeputies, 350);
+            });
+            document.getElementById('deputies-region').addEventListener('change', loadDeputies);
+            document.getElementById('deputies-party').addEventListener('change', loadDeputies);
+
+            let seancesTimer;
+            document.getElementById('seances-search').addEventListener('input', () => {
+                clearTimeout(seancesTimer);
+                seancesTimer = setTimeout(loadSeances, 350);
+            });
+            document.getElementById('seances-type').addEventListener('change', loadSeances);
+
+            let lawsTimer;
+            document.getElementById('laws-search').addEventListener('input', () => {
+                clearTimeout(lawsTimer);
+                lawsTimer = setTimeout(loadLaws, 350);
+            });
+            document.getElementById('laws-type').addEventListener('change', loadLaws);
+            document.getElementById('laws-status').addEventListener('change', loadLaws);
+        });
+    </script>
+</body>
+
+</html>
+
+</html>

@@ -1,0 +1,178 @@
+﻿numero,nom,prenom,genre,district,region,parti_politique,groupe_parlementaire,status,photo_url
+1.0,AFAKANDRO,Christian,Masculin,Mahajanga,BOENY,Firaisankina,FIRAISANKINA,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/PHOTO_1_afakandro_christian.webp
+2.0,MENA,Honaisiford Edwin,Masculin,Mitsinjo,BOENY,,Non_Affilié,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/PHOTO_2_mena_honaisiford-edwin.jpeg
+3.0,ANDRIAMAMERIARIVO,Déo Romelis,Masculin,Bekily,ANDROY,IRMAR,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N03.webp
+4.0,ANDRIAMAMONJY,Olivier,Masculin,Amboasary,ANOSY,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N04.webp
+5.0,RAMANANARIVO,Samoela,Masculin,Antananarivo IV,ANALAMANGA,Firaisankina,FIRAISANKINA,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/PHOTO_5_ramananarivo_samoela.webp
+6.0,ANDRIAMANANORO,RAZAFINARIVO Augustin,Masculin,Antananarivo I,ANALAMANGA,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N06.webp
+7.0,ANDRIAMANJATO,Liantsoa Bina,Masculin,Andramasina,ANALAMANGA,Indépendant,GPIF3,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/4.webp
+8.0,ANDRIAMIHAJA,Fanomezantsoa Yves Georges,Masculin,Ambositra,AMORON'I MANIA,Indépendant,Non_Affilié,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/08.webp
+9.0,ANDRIAMIHARIVOLAMENA,Liva Zavamanitra,Masculin,Fandriana,AMORON'I MANIA,Indépendant,Non_Affilié,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N09.webp
+10.0,ANDRIAMOSA,Benjamina Avotraina Rajaobelina Mary Thomasson,Masculin,Avaradrano,ANALAMANGA,Firaisankina,FIRAISANKINA,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/PHOTO_10_andriamosa_benjamina-avotraina-rajaobelina-mary-thomasson.webp
+11.0,ANDRIANAMBENANA,Velomihoatra Tsimanositra Painchard,Masculin,Farafangana,ATSIMO ATSINANANA,IRMAR,Non_Affilié,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N11.webp
+12.0,ANDRIANANARIVONOMENJANAHARY,Andrianasolo Joseph Oslo Sandland,Masculin,Antsalova,MELAKY,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N12.webp
+13.0,ANDRIANARY,Thierry Didier,Masculin,Toamasina II,ATSINANANA,IRMAR,GPIF2,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N13.webp
+14.0,ANDRIANASOLO,Andrianiaina Jean Patrick,Masculin,Ambatondrazaka,ALAOTRA MANGORO,IRMAR,GPIF3,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N14.webp
+15.0,ANDRIANASOLO,Nadine,Feminin,Manakara,FITOVINANY,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N15.webp
+16.0,ANDRIANIRINA,Narcis,Masculin,Mahabo,MENABE,IRMAR,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N16.webp
+17.0,ANDRIANJANAHARY,Fanomezantsoa,Masculin,Manandriana,AMORON'I MANIA,Indépendant,GPIF3,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/10.webp
+18.0,AROSY,Namiandrazana François,Masculin,Nosy Be,DIANA,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N18.webp
+19.0,ASSIMO,Bruno,Masculin,Ambilobe,DIANA,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N19.webp
+20.0,BARINIAINA,Fidy,Masculin,Manjakandriana,ANALAMANGA,FIVOI,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N20.webp
+21.0,Befeno Todimanana,Aymar Hyacinthe,Masculin,Antsohihy,SOFIA,IRMAR,Non_Affilié,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N21.webp
+22.0,BEFOTOTO,Angelin,Masculin,Andapa,SAVA,IRMAR,Non_Affilié,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N22.webp
+23.0,BOTOTEFY,Herimanantsoa Odilon,Masculin,Vondrozo,ATSIMO ATSINANANA,IRMAR,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N23.webp
+24.0,DARKHAOUI,Siritis,Masculin,Ambanja,DIANA,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/18_ErIPv84.webp
+25.0,DINAH,Romual,Masculin,Maroantsetra,ANALANJIROFO,IRMAR,GPIF3,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N25.webp
+26.0,FERNAND,Eric Sandhy,Masculin,Antalaha,SAVA,Indépendant,Non_Affilié,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N26_trn8E45.webp
+27.0,FIAROVANA,Lovanirina Célestin,Masculin,Betafo,VAKINANKARATRA,IRMAR,GPIF2,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/lova.webp
+28.0,FIENENA,Richard Désiré,Masculin,Manja,MENABE,IRMAR,Non_Affilié,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N28_WfiGUiQ.webp
+29.0,FIHEREZAVINANY,Mena,Masculin,Morafenobe,MELAKY,IRMAR,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/29.webp
+30.0,FOMENDRAZA,Haingo Elisette,Feminin,Ambositra,AMORON'I MANIA,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N30.webp
+31.0,GOULAMALY,Jacques Bruno Fils,Masculin,Antanimora Sud,ANDROY,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N31.webp
+32.0,HANOGNONA,Hervé,Masculin,Betioky Sud,ATSIMO ANDREFANA,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N32.webp
+33.0,IBRAHIM,Issa Charles,Masculin,Antsiranana I,DIANA,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N33.webp
+34.0,IMBIKY,Herilaza,Masculin,Sainte Marie,ANALANJIROFO,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/PHOTO_34_imbiky_herilaza.webp
+35.0,JAOZANDRY,René,Masculin,Bealanana,SOFIA,Indépendant,GPIF3,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N35.webp
+36.0,JEAN,FRANCOIS Michel,Masculin,Antsirabe I,VAKINANKARATRA,Firaisankina,FIRAISANKINA,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N36.webp
+37.0,MAHAVITARA,Sylvestre,Masculin,Vangaindrano,ATSIMO ATSINANANA,Indépendant,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/37.webp
+38.0,MAMANGY,Norbert,Masculin,Sambava,SAVA,IRMAR,Non_Affilié,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N38.webp
+39.0,MAMIHAJA,Charlot,Masculin,Mananjary,VATOVAVY,Firaisankina,FIRAISANKINA,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N39.webp
+40.0,MAMINIRINA,Jolce Emilien,Masculin,Manakara,FITOVINANY,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N40.webp
+41.0,MANANTENA,Hajanirina Dinah,Masculin,Ifanadiana,VATOVAVY,IRMAR,Non_Affilié,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N41_cLKbmyo.webp
+42.0,MANASOA,Donat Tang,Masculin,Mahanoro,ATSINANANA,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/42.webp
+43.0,MANDRARA,Louis Fernandy,Masculin,Ambilobe,DIANA,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N43.webp
+44.0,RAKOTOHARITIANA,Navalona Franky Aimé,Masculin,Antananarivo III,ANALAMANGA,Mouvement Gasikara,Non_Affilié,ACTIVE,https://assemblee-nationale.mg/static/siteweb/images/repoblika.webp
+45.0,MARA,Volamiranty Donna,Feminin,Nosy Varika,VATOVAVY,IRMAR,Non_Affilié,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/45.webp
+46.0,MARINDRY,Rasolohery Andry Chrinssant,Masculin,Marovoay,BOENY,Indépendant,Non_Affilié,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N46.webp
+47.0,MBADE,Jeannine Gabrielle,Feminin,Maevatanana,BETSIBOKA,IRMAR,GPIF3,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N47.webp
+48.0,MENAVOLO,Alban,Masculin,Soanierana Ivongo,ANALANJIROFO,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N48_XqdCV3b.webp
+49.0,MICHELLE,Bavy Angelica,Feminin,Fenerive Est,ANALANJIROFO,IRMAR,GPIF3,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N49.webp
+50.0,MILAVONJY,Andriasy Philobert,Masculin,Ambovombe,ANDROY,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N50_AldkcIG.webp
+51.0,MONG,MANN Bismark,Masculin,Ihosy,IHOROMBE,IRMAR,GPIF3,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N51.webp
+52.0,NAHARIMAMY,Lucien Irmah,Feminin,Toamasina I,ATSINANANA,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N52_z14UazP.webp
+53.0,NAKANY,Charly Zafimagnely,Masculin,Beroroha,ATSIMO ANDREFANA,Indépendant,GPIF3,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N53.webp
+54.0,NASIRA,Julien,Masculin,Antalaha,SAVA,IRMAR,Non_Affilié,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N54_ARjkQVM.webp
+55.0,NOURDINE,Chabani,Masculin,Tolagnaro,ANOSY,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N55.webp
+56.0,OLIVIER,Rabeamina,Masculin,Port Berg├®,SOFIA,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N56.webp
+57.0,PEPIN,Michou,Masculin,Ankazoabo,ATSIMO ANDREFANA,IRMAR,Non_Affilié,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/47-380x380.webp
+58.0,RABEHARISON,Bernardin,Masculin,Befandriana Nord,SOFIA,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N58.webp
+59.0,RALIFOSY,Laurent,Masculin,,,AVI (Firaisan-kina),FIRAISANKINA,ACTIVE,https://assemblee-nationale.mg/static/siteweb/images/repoblika.webp
+60.0,RABENIRINA,Maminiaina Solondraibe,Masculin,Ambohidratrimo,ANALAMANGA,Firaisankina,FIRAISANKINA,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N60_NlZcbGI.webp
+61.0,RABY,SAVATSARAH Ain' Harimanga Gabrielle,Feminin,Farafangana,ATSIMO ATSINANANA,Indépendant,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N61.webp
+62.0,RADAFINDRANARO,ANDRIAMANGA Rijaniaina Thierry,Masculin,Avaradrano,ANALAMANGA,IRMAR,GPIF2,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N62.webp
+63.0,RAFANONIAINA,Haja Rivolala Elysée Théodore,Masculin,Anosibe An'Ala,ALAOTRA MANGORO,IRMAR,GPIF2,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N63.webp
+64.0,RAFIDIMANANA,Désiré,Masculin,Antananarivo IV,ANALAMANGA,IRMAR,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/PHOTO_64_rafidimanana_desire_1TvyoUj.webp
+65.0,RAFIDIMANANA,Narson,Masculin,Antanifotsy,VAKINANKARATRA,FIraisankina,FIRAISANKINA,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/55-150x150.webp
+66.0,HERINIAINA,Tia Solofomanga,Masculin,Mahajanga,BOENY,,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/PHOTO_66_heriniaina_tia-solofomanga.webp
+67.0,RAHARIMANARIVO,Voahanginiaina Berthine,Feminin,Atsimondrano,ANALAMANGA,Firaisankina TIM,FIRAISANKINA,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/PHOTO_67_raharimanarivo_voahanginiaina-berthine.webp
+68.0,MAHARANTE,Rakotonandrasana Jean de Dieu Benjamin,Masculin,Toliara I,ATSIMO ANDREFANA,,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/PHOTO_68_maharante_rakotonandrasana-jean-de-dieu-benjamin.webp
+69.0,SYLVAIN,Claude Emile,,Antsiranana I,DIANA,,IRMAR,ACTIVE,https://assemblee-nationale.mg/static/siteweb/images/repoblika.webp
+70.0,RAHOLDINA,RANAIVO Herinantsoina,Masculin,Antananarivo V,ANALAMANGA,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N70_CJN2EQE.webp
+71.0,RAHOLIJAONA,Harson,Masculin,Tsiroanomandidy,BONGOLAVA,Indépendant,Non_Affilié,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N71.webp
+72.0,RAJAOBELINA,Lova Herizo,Masculin,Moramanga,ALAOTRA MANGORO,IRMAR,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/63-150x150.webp
+73.0,RAJAONARY,Andriantsizafy Mahenintsoa,Masculin,Ambatomainty,MELAKY,Indépendant,GPIF2,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N73.webp
+74.0,RAJOELIMALALA,Herihasina Eljo,Masculin,Antanifotsy,VAKINANKARATRA,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N74.webp
+75.0,RAJOELINA,Andriam-harimanana Seth,Masculin,Fianarantsoa,HAUTE MATSIATRA,IRMAR,GPIF3,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N75.webp
+76.0,RAKOTOARIMANANA,Patrice,Masculin,Andilamena,ALAOTRA MANGORO,IRMAR,GPIF2,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N76.webp
+77.0,RAKOTOARISOA,Nirina Fenohery Johnny,Masculin,Ambohidratrimo,ANALAMANGA,IRMAR,GPIF2,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N77.webp
+78.0,RAKOTOMALALA,Biri Golbert,Masculin,Morombe,ATSIMO ANDREFANA,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N78_1vOxGXq.webp
+79.0,RAKOTOMALALA,Miarintsoa,Masculin,Ambatolampy,VAKINANKARATRA,Indépendant,Non_Affilié,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N79_Nwc9S44.webp
+80.0,RAKOTOMANGA,Lantoarivola Sedera,Feminin,Antananarivo II,ANALAMANGA,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/80.webp
+81.0,RAKOTONDRABESA,Pierre Aimé,Masculin,Arivonimamo,ITASY,FIVOI,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N81.webp
+82.0,RAKOTONDRAMANITRA,Vahiny Felix,Masculin,Amparafaravola,ALAOTRA MANGORO,Indépendant,GPIF2,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N82.webp
+83.0,RAKOTONDRASOA,Fetra,Masculin,Miarinarivo,ITASY,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/image_2024-08-21_142708373.webp
+84.0,RAKOTONIAINA,Lova Andrien Marie,Masculin,Miandrivazo,MENABE,Firaisankina,FIRAISANKINA,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N84.webp
+85.0,RAKOTONIAINA,Pety,Masculin,Ikalamavony,HAUTE MATSIATRA,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N85_BKfazU6.webp
+86.0,RAKOTONIRINA,Richard Joseph,Masculin,Amboasary,ANOSY,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N86.webp
+87.0,RAKOTORAHALAHY,Modeste,Masculin,Mandoto,VAKINANKARATRA,Indépendant,GPIF2,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N87_J55syCn.webp
+88.0,RAKOTOSON,Hubert,Masculin,Mahanoro,ATSINANANA,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/Photo_n88-Mahanoro.webp
+89.0,RAMBOARIVELO,Andrianantenaina Jocelyn Willy,Masculin,Antananarivo III,ANALAMANGA,,FIRAISANKINA,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/PHOTO_89_ramboarivelo_andrianantenaina-jocelyn-willy.webp
+90.0,RALAMBOZAFIMBOLOLONA,Razafitsimialona Andriantsivoafetra,Masculin,Antananarivo V,ANALAMANGA,Firaisankina,FIRAISANKINA,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N90.webp
+91.0,RALAMBOZAFY,Raoto Andrianirinarivo,Masculin,Isandra,HAUTE MATSIATRA,IRMAR,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N91.webp
+92.0,RAMANAMBITA,Richade Houssen Ismaël,Masculin,Beloha,ANDROY,Indépendant,GPIF1,ACTIVE,https://assemblee-nationale.mg/static/siteweb/images/repoblika.webp
+93.0,RAMANANARIVO,Handry Orlando,Masculin,Mahajanga II,BOENY,Indépendant,GPIF2,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N93_W1THP5u.webp
+94.0,RAMANANJARASOA,Clarisse Eugénie,Feminin,Ivohibe,IHOROMBE,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N94.webp
+95.0,RANDRIANARISON,Rivo Setra,Masculin,Soavinandriana,ITASY,Indépendant,Non_Affilié,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/PHOTO_95_randrianarison_rivo-setra.webp
+96.0,RAMILISON,Andriamampionona Nomenjanahary,Masculin,Faratsiho,VAKINANKARATRA,Firaisankina,FIRAISANKINA,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N96.webp
+97.0,RAMINOALISOA,Andriniaina Herizo,Masculin,Fenerive Est,ANALANJIROFO,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N97.webp
+98.0,RANARIVELO,Lucien,Masculin,Tsiroanomandidy,BONGOLAVA,Indépendant,GPIF2,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N98.webp
+99.0,RANDRIAMALALA,Thony,Masculin,Tsaratanana,BETSIBOKA,IRMAR,GPIF2,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N99_oEqmPpe.webp
+100.0,RANDRIAMAMPIANINA,Rajerison Antoine,Masculin,Arivonimamo,ITASY,FIVOI,Non_Affilié,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/981b57a2-a426-4c2a-bb33-b6e7f4e176d3.webp
+101.0,RANDRIAMANAMPISOA,Alfred,Masculin,Antsirabe II,VAKINANKARATRA,IRMAR,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N101_z5EyQAg.webp
+102.0,RANDRIAMANANTENA,Stipio,Masculin,Voh├®mar,SAVA,IRMAR,GPIF2,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N102.webp
+103.0,RANDRIAMASINORO,Tahiry Ny Rina,Masculin,Antananarivo IV,ANALAMANGA,Firaisankina,FIRAISANKINA,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/PHOTO_103_randriamasinoro_tahiry-ny-rina_sWpKkOI.webp
+104.0,RANDRIANANTENAINA,Olivier Antonny José,Masculin,Antsirabe II,VAKINANKARATRA,Firaisankina,FIRAISANKINA,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N104.webp
+105.0,RANDRIANARISOA,Bien Aimé Arsène,Masculin,Fenoarivobe,BONGOLAVA,IRMAR,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N105.webp
+106.0,RANDRIANARISOA,Stanislas,Masculin,Antananarivo II,ANALAMANGA,Firaisankina,FIRAISANKINA,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/PHOTO_106_randrianarisoa_stanislas_CZmarqD.webp
+107.0,RANDRIANARIVO,Edwin,Masculin,Ambato Boeny,BOENY,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/WhatsApp_Image_2024-08-07_at_12.59.48.webp
+108.0,RANDRIANASOLO,Augustin,Masculin,Marolambo,ATSINANANA,IRMAR,GPIF2,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N108.webp
+109.0,RANDRIANASOLO,Jean Nicolas,Masculin,Betroka,ANOSY,GJMP,Non_Affilié,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/102.webp
+110.0,RANDRIANASOLO,Tojosoa Idéal,Masculin,Vangaindrano,ATSIMO ATSINANANA,IRMAR,GPIF2,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N110.webp
+111.0,RANDRIANASOLONIAIKO,Siteny Thierry,Masculin,Toliara I,ATSIMO ANDREFANA,Firaisankina,FIRAISANKINA,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N111_tciPVsN.webp
+112.0,RANDRIARISON,Maurice Lucien,Masculin,Mananjary,VATOVAVY,IRMAR,GPIF3,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N112.webp
+113.0,RANDRIATAHINAMALALA,Livasoa Moratiavina,Masculin,Betafo,VAKINANKARATRA,Firaisankina,FIRAISANKINA,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/PHOTO_113_randriatahinamalala_livasoa-moratiavina.webp
+114.0,RAPHAEL,Jean Francois,Masculin,Sakaraha,ATSIMO ANDREFANA,Firaisankina,FIRAISANKINA,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N114.webp
+115.0,RAPHAELIEN,Solofoniaina Emilien Narson,Masculin,Mampikony,SOFIA,IRMAR,GPIF3,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/105-RAPHAELIEN-Solofoniaina-Emilien-Narison-Mampikony-Sofia.webp
+116.0,RASOAMALALA,Honorine,Feminin,Ambohimahasoa,HAUTE MATSIATRA,IRMAR,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N116_wllsaL1.webp
+117.0,RASOANIRINA,Marcelline,Feminin,Ambalavao,HAUTE MATSIATRA,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N117.webp
+118.0,RASOLOMANANA,Beby Olivier,Masculin,Mandritsara,SOFIA,IRMAR,GPIF2,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N118.webp
+119.0,RATOLOJANAHARY,Arsène,Masculin,Midongy Atsimo,ATSIMO ATSINANANA,IRMAR,GPIF3,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N119.webp
+120.0,RATSIMANDRIONA,Aida Hardy,Feminin,Tolagnaro,ANOSY,IRMAR,GPIF3,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N120.webp
+121.0,RATSIRAKA,Iarovana Roland,Masculin,Toamasina I,ATSINANANA,Kolektifa,Non_Affilié,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N121_Xpp46bZ.webp
+122.0,RATSIRAKA,Sophie Soamiadana,Feminin,Vatomandry,ATSINANANA,Indépendant,Non_Affilié,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/PHOTO_122_ratsiraka_sophie-soamiadana.webp
+123.0,RATSIVAHINISOLO,Andriniony,Masculin,Atsimondrano,ANALAMANGA,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N123.webp
+124.0,RAVELONASY,Barthélemy Samuel,Masculin,Brickaville,ATSINANANA,IRMAR,GPIF2,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N124.webp
+125.0,RAVONIARISOA,Mariette,Feminin,Ikongo,FITOVINANY,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N125.webp
+126.0,RAYMOND,,Masculin,Antsiranana II,DIANA,IRMAR,GPIF1,ACTIVE,
+127.0,RAZAFIHARISON,Andriamanantena,Masculin,Ampanihy,ATSIMO ANDREFANA,IRMAR,Non_Affilié,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N127.webp
+128.0,RAZAFIMAHATRATRA,Daniel Jean Christian,Masculin,Ambalavao,HAUTE MATSIATRA,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N128.webp
+129.0,RAZAFIMAHEFA,Tianarivelo Edouard,Masculin,Ambatolampy,VAKINANKARATRA,IRMAR,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N129_AS8juYo.webp
+130.0,RANDRIAMISANDRATRA,Barthélémy,Masculin,Antananarivo I,ANALAMANGA,FIRAISANKINA,FIRAISANKINA,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/PHOTO_130_randriamisandratra_barthelemy.webp
+131.0,RAZAFIMANDIMBY,Harijao Percy,Masculin,Ankazobe,ANALAMANGA,FIVOI,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N131_qUBlwjv.webp
+132.0,RAZAFIMANDROSO,NEE RAZANAJATO Virginie,Feminin,Moramanga,ALAOTRA MANGORO,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N132.webp
+133.0,RAZAFINDRABARY,Narson Seth Jean Richard,Masculin,Ambatofinandrahana,AMORON'I MANIA,IRMAR,GPIF3,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N133.webp
+134.0,RAZAFINDRAMASY,Faralahy Célestin,Masculin,Benenitra,ATSIMO ANDREFANA,Parti Vert,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N134.webp
+135.0,RAZAFINDRIATSARA,Jonhson Anatol,Masculin,Befotaka,ATSIMO ATSINANANA,IRMAR,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N135.webp
+136.0,RAZAFINIMARO,Désiré,Masculin,Antsirabe I,VAKINANKARATRA,IRMAR,GPIF2,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N136.webp
+137.0,RAZAFINJATO,Aurelie Marie Augustine,Feminin,Vohibato,HAUTE MATSIATRA,IRMAR,Non_Affilié,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N137.webp
+138.0,RAZAFINTSIHOARANA,Edison,Masculin,Anjozorobe,ANALAMANGA,Firaisankina,FIRAISANKINA,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N138.webp
+139.0,RAZAFITSIALA,Velomanana Solomampionona,Masculin,Vohipeno,FITOVINANY,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N139.webp
+140.0,RAZAKA,ANDRIAMIHAHO Barthelemy,Masculin,Ihosy,IHOROMBE,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N140.webp
+141.0,RAZAKAMANANA,André,Masculin,Mandritsara,SOFIA,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N141.webp
+142.0,RAZANAMANDIMBISOA,Tantely,Feminin,Antananarivo VI,ANALAMANGA,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N142.webp
+143.0,RAZARA,Pierre Ravolaza Fidèle,Masculin,Ambatondrazaka,ALAOTRA MANGORO,Firaisankina,FIRAISANKINA,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N143_hXxTvY9.webp
+144.0,RESAMPA,Ramanohy André Hajaharimalala Organës,Masculin,Morondava,MENABE,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N144.JPG
+145.0,RIVOTIANA,Richard Jean Bosco,Masculin,Lalangina,HAUTE MATSIATRA,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N145_SLczgSX.webp
+146.0,ROCHELIN,Houssen,Masculin,Toliara II,ATSIMO ANDREFANA,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N146.webp
+147.0,ROILAHY,,Masculin,Toamasina II,ATSINANANA,IRMAR,GPIF1,ACTIVE,
+148.0,SAHONDRARIMALALA,Marie Michelle,Feminin,Fianarantsoa,HAUTE MATSIATRA,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N148_t1uk50Q.webp
+149.0,SAID,ZAKANIAINA Mahafaly Joseph,Masculin,Soalala,BOENY,IRMAR,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N149_cAcLGOL.webp
+150.0,SAMBO,,Masculin,Iakora,IHOROMBE,Indépendant,GPIF3,ACTIVE,
+151.0,SAMUEL,,Masculin,Mananara Nord,ANALANJIROFO,IRMAR,GPIF1,ACTIVE,
+152.0,SAORY,Christian,Masculin,Belo sur Tsiribihina,MENABE,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N152_tNO3Z8i.webp
+153.0,MANANKO,Jerome,,Analalava,SOFIA,,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/PHOTO_153_mananko_jerome.webp
+154.0,SYLVIE,Liva Gervais,Feminin,Besalampy,MELAKY,IRMAR,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N154.webp
+155.0,TARKA,Jean Michel,Masculin,Antanambao Manampontsy,ATSINANANA,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N155.webp
+156.0,TOKELY,Justin,Masculin,Sambava,SAVA,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N156_qwjoNiA.webp
+157.0,TOLIA,Bernard,Masculin,Tsihombe,ANDROY,IRMA,GPIF3,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N157_pXjT5Yk.webp
+158.0,TSARADIA,Marco,Masculin,Ampanihy,ATSIMO ANDREFANA,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N158_dZlWpn2.webp
+159.0,TSIKIVY,Adrien,Masculin,Kandreho,BETSIBOKA,IRMAR,GPIF3,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N159.webp
+160.0,TSITARA,Rojers Osman,Masculin,Toliara II,ATSIMO ANDREFANA,IRMAR,IRMAR,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N160.webp
+161.0,VELONJARA,Théophiline,Feminin,Maintirano,MELAKY,IRMAR,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N161.webp
+162.0,VOLAMAHAZAKA,Felix Boris,Masculin,Vavatenina,ANALANJIROFO,IRMAR,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N162.webp
+163.0,VOLOLOMBOAHANGY,Tsiriniaina Narindra,Feminin,Amparafaravola,ALAOTRA MANGORO,Indépendant,GPIF1,ACTIVE,https://pub-7e0d3a35c1b949698a7ced344fa56252.r2.dev/photos_deputes/N163_vpLaRGc.webp
+,AHMAD,Ahmad,Masculin,Mitsinjo,BOENY,Indépendant,,RESIGNED,
+,ANDRIAMAMPANDRY,Todisoa Manampy,Masculin,,,Firaisankina,,NOMINATED,
+,RABENIRINA,Jean Jacques,Masculin,Betioky Sud,ATSIMO ANDREFANA,Firaisankina,,DECEASED,
+,RAHANTANIRINA,Lalao,Feminin,Mahajanga,BOENY,IRMAR,,RESIGNED,
+,RAHAROARILALA,Tinoka Roberto Michaël,Masculin,Toliara I,ATSIMO ANDREFANA,IRMAR,,RESIGNED,
+,RAHELIHANTA,Jocelyne,Feminin,Antsiranana I,DIANA,IRMAR,,RESIGNED,
+,RALAMBOMANANA,Fenoherintsoa,Masculin,,,Firaisankina,,NOMINATED,
+,RAZAFIMANANTSOA,Lobo Hanitriniaina,Feminin,,,Firaisankina,,NOMINATED,
+,SOAFILIRA,Princia,Feminin,Analalava,SOFIA,IRMAR,,RESIGNED,
+,TREMPIER,Michaël,Masculin,Vohibato,HAUTE MATSIATRA,IRMAR,,ACTIVE,
+,RAZAFINDRAKOTO,Victor,Masculin,Fianarantsoa,HAUTE MATSIATRA,TGV,,RESIGNED,
+,MALAINKORATSY,Jocelyn,Masculin,Nosy Varika,VATOVAVY,TGV,,ACTIVE,
+,MANDRINDRARIVONY,Ogascar Fenosoa,Masculin,,,Indépendant,,NOMINATED,
+,RAMANATANANA,Roméo Christophe,Masculin,Soavinandriana,ITASY,Indépendant,,RESIGNED,
